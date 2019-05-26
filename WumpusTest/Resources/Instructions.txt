@@ -1,0 +1,4 @@
+Instructions:
+- Objective is to kill the Wumpus by shooting it from an adjacent room
+- Use the arrow keys to move around each room
+- “I smell a Wumpus” means the Wumpus is in an adjacent room
