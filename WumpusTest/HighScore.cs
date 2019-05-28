@@ -14,7 +14,6 @@ namespace WumpusTest
         private String[] scoresAsString = new String[10];
         private List<string> scoresAsArrayList = new List<string>();
 
-
         public HighScore()
         {
             scoresAsString = File.ReadAllLines("HighScores.txt");
@@ -27,7 +26,6 @@ namespace WumpusTest
                 scores[i] = score;
             }
             scoresAsArrayList.AddRange(scoresAsString);
-
         }
 
         public void displayHighScores()
@@ -93,10 +91,6 @@ namespace WumpusTest
             {
                 return false;
             }
-
-
         }
-
-
     }
 }

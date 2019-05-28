@@ -93,5 +93,41 @@
   <ItemGroup>
     <None Include="Resources\TriviaQuestions.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\North_Door.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\North_NoDoor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Northeast_Door.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Northeast_NoDoor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Northwest_Door.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Northwest_NoDoor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South_Door.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South_NoDoor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Southeast_Door.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Southeast_NoDoor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Southwest_Door.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Southwest_NoDoor.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

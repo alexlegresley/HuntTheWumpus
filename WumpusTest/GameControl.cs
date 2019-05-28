@@ -10,15 +10,17 @@ namespace WumpusTest
     {
 
         // instance variables
-        private GUI gui;
-        private Cave c;
-        private PlayerControl pc;
-        private GameLocations gl;
-        private Hazards h;
-        private Trivia t;
-        private HighScore hs;
+        private GUI _gui;
+        private Cave _cave;
+        private Wumpus.Room _room;
+        private Player _player;
+        private Hazard _hazard;
+        private Trivia _trivia;
+        private HighScore _highscore;
         private int turns;
         private String name;
+        private int[] surroundingRooms;
+        private int[] availableRooms;
 
         public GameControl()
         {
@@ -26,14 +28,14 @@ namespace WumpusTest
 
         public void beginGame()
         {
-            gui   = new GUI();
-            c     = new Cave();
-            pc    = new PlayerControl();
-            gl    = new GameLocations();
-            h     = new Hazards();
-            t     = new Trivia();
-            hs    = new HighScore();
-            turns = 0;
+            _gui        = new GUI();
+            _cave       = new Cave();
+            _room       = new Wumpus.Room();
+            _player     = new Player();
+            _hazard     = new Hazard();
+            _trivia     = new Trivia();
+            _highscore  = new HighScore();
+            turns       = 0;
         }
 
         public void setName(String name)
@@ -44,41 +46,32 @@ namespace WumpusTest
         private void endGame()
         {
             int score = calculateScore();
-            hs.addScore(name, score);
-            gui.displayMainMenu();
+            _highscore.addScore(name, score);
+            _gui.displayMainMenu();
         }
 
         private int calculateScore()
         {
             int score = 100 - turns + pc.getCoins() + (5 * pc.getArrows());
-            if (!h.wumpusAlive())
+            if (!_hazard.wumpusAlive())
             {
                 score += 50;
             }
             return score;
         }
 
-        public void movePlayer(int index)
+        public void movePlayer(int newRoom)
         {
-            if (roomValid(index))
+            if (_player.getCoins() - 1 > 0)
             {
-                if (pc.getCoins - 1 >= 0)
-                {
-                    gl.setCurrentRoom(c.getAdjacentRooms[gl.getCurrentRoom][index]);
-                    pc.addCoin();
-                    gui.displayRoom(gl.getCurrentRoom, c.getAdjacentRooms(gl.getCurrentRoom));
-                    turns++;
-                }
-                else
-                {
-                    endGame();
-                }
+                surroundingRooms = _room.getSurrounding();
+                availableRooms = _room.getAvailable();
+                _gui.setRoomStates(surroundingRooms, availableRooms);
             }
-        }
-
-        private Boolean roomValid(int index)
-        {
-            return c.getAdjacentRooms[gl.getCurrentRoom][index] != -1;
+            else
+            {
+                endGame();
+            }  
         }
 
         public void buyArrow()
