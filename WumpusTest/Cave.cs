@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 
-namespace Wumpus
+namespace WumpusTest
 {
     class Cave
     {
+
         Random r = new Random();
         ArrayList unusedRoom = new ArrayList();
         public Room[] cave;
+
         public Cave()
         {
             cave = new Room[30];
@@ -39,7 +41,6 @@ namespace Wumpus
             int i;
             for (i = 1; i < 1000; i++)
             {
-
                 cave[i].setAvailable(cave[i - 1].getRoomNum(), cave[i + 1].getRoomNum(), 117);
                 if (cave[i + 1].getPossConn() == 3)
                 {
@@ -56,6 +57,7 @@ namespace Wumpus
             cave[29].setAvailable(cave[28].getRoomNum(), 58, 65);
             setAdjacentRooms();
         }
+
         public void setAdjacentRooms()
         {
             cave[0].setSurrounding(cave[1].getRoomNum(), cave[2].getRoomNum(), cave[29].getRoomNum(), cave[23].getRoomNum(), cave[22].getRoomNum(), cave[21].getRoomNum());
@@ -93,6 +95,7 @@ namespace Wumpus
             cave[26].finishSurrounding(cave[17].getRoomNum(), cave[18].getRoomNum());
             cave[27].finishSurrounding(cave[1].getRoomNum(), cave[4].getRoomNum()); 
         }
+
         public Boolean isValidMove(int room, int moveTo)
         {
             int[] temp= cave[getIndex(room)].getAvailable();
@@ -105,6 +108,7 @@ namespace Wumpus
             }
             return false;
         }
+
         public void reset()
         {
             for (int i = 1; i <= 30; i++)
@@ -112,6 +116,7 @@ namespace Wumpus
                 unusedRoom.Add(i);
             }
         }
+
         public int GetNum()
         {
             int k = unusedRoom.Count;
@@ -121,7 +126,7 @@ namespace Wumpus
             return (a - 1);
         }
     
-    public ArrayList newArray()
+        public ArrayList newArray()
         {
             ArrayList possRoom = new ArrayList();
             for (int i = 1; i <= 30; i++)
@@ -130,18 +135,19 @@ namespace Wumpus
             }
             return possRoom;
         }
+
         public int getIndex(int roomNum)
         {
             for (int k = 0; k < 30; k++)
             {
-                
-                    if (cave[k].getRoomNum() == roomNum)
-                    {
-                        return k;
-                    }
+                if (cave[k].getRoomNum() == roomNum)
+                {
+                    return k;
                 }
-                return -1;
             }
+            return -1;
+        }
+
         public void Sort()
         {
             Boolean swap = true;
@@ -160,17 +166,20 @@ namespace Wumpus
                 }
             }
         }
+
         public Room getRoomByIndex(int index)
         {
             return cave[index];
         }
-     public Room getRoombyRoomNumber(int roomNumber)
+
+        public Room getRoombyRoomNumber(int roomNumber)
         {
             int index = getIndex(roomNumber);
             return cave[index];
         }
             
-        }
     }
+
+}
 
 

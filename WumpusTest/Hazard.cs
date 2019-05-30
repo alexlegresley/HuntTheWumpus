@@ -1,25 +1,34 @@
 ﻿using System;
-namespace Wumpus
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace WumpusTest
 { 
-public class Hazard 
-{
-    private int currentRoom;
-    private int destinationRoom;
-    public Hazard(int c, int d)
+    public class Hazard 
+    {
+
+        private int currentRoom;
+        private int destinationRoom;
+
+        public Hazard(int c, int d)
         {
             currentRoom = c;
             destinationRoom = d;
         }
-    public int getCurrentRoom()
+
+        public int getCurrentRoom()
         {
-            return currentRoom();
+            return currentRoom;
         }
-    public int getDestination()
+
+        public int getDestination()
         {
             return destinationRoom;
         }
-    public String HazardType()
+
+        public String HazardType()
         {
             if (currentRoom == destinationRoom)
             {
@@ -27,5 +36,7 @@ public class Hazard
             }
             return "Bat";
         }
+
     }
+
 }

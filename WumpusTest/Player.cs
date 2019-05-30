@@ -1,23 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Wumpus
-
-
+namespace WumpusTest
 { 
     public class Player
-{
+    {
 
-    private int arrow;
-    private int gold;
+        private int arrow;
+        private int gold;
         private int roomNumber;
         private Hazard BatA;
-    private Hazard BatB;
-   private Hazard PitA;
-    private Hazard PitB;
+        private Hazard BatB;
+        private Hazard PitA;
+        private Hazard PitB;
+
         public Player()
-
         {
-
             gold = 0;
             arrow = 0;
             Random RNG = new Random();
@@ -60,60 +61,71 @@ namespace Wumpus
             }
             while (f == c || f == b || f==e);
             PitB = new Hazard(f, f);
-
         }
-    public int getValidRoomNumber(Random RNG)
+
+        public int getValidRoomNumber(Random RNG)
         {
             return RNG.Next(29) + 1;
         }
-    public void setGold(int k)
-    {
-        gold = k;
-    }
-    public void addOneGold()
-    {
-        gold++;
-    }
-    public void addOneArrow()
-    {
-        arrow++;
-    }
-    public void SpendAnArrow()
-    {
-        arrow--;
-    }
-    public int getArrow()
-    {
-        return arrow;
-    }
-    public int getGold()
-    {
-        return gold;
-    }
-    public int getRoomNumber()
-    {
-        return roomNumber;
-    }
-    public bool CanCanContinuePlaying()
-    {
-        if (arrow < 0 || gold < 0)
+
+        public void setGold(int k)
         {
-            return false;
+            gold = k;
         }
-        return true;
-    }
-    public void setRoomNumber(int k)
-    {
-        if (k <= 30)
+
+        public void addOneGold()
         {
-            roomNumber = k;
+            gold++;
         }
-    }
-    public Boolean checkHazard()
+
+        public void addOneArrow()
+        {
+            arrow++;
+        }
+
+        public void SpendAnArrow()
+        {
+            arrow--;
+        }
+
+        public int getArrow()
+        {
+            return arrow;
+        }
+
+        public int getGold()
+        {
+            return gold;
+        }
+
+        public int getRoomNumber()
+        {
+            return roomNumber;
+        }
+
+        public bool CanCanContinuePlaying()
+        {
+            if (arrow < 0 || gold < 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public void setRoomNumber(int k)
+        {
+            if (k <= 30)
+            {
+                roomNumber = k;
+            }
+        }
+
+        public Boolean checkHazard()
         {
             return roomNumber == BatA.getCurrentRoom() || roomNumber == BatB.getCurrentRoom() || roomNumber == PitB.getCurrentRoom() || roomNumber == PitA.getCurrentRoom();
         }  
-    public void HazardAction()
+
+        public void HazardAction()
         {
             if (BatA.getCurrentRoom() == roomNumber)
             {
@@ -131,7 +143,9 @@ namespace Wumpus
                 // implement pit action
             }
         }
-}
+
+    }
+
 }
 
 

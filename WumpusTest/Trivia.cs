@@ -13,80 +13,107 @@ namespace WumpusTest
     {
 
         // instance variables
+        private GUI _gui;
+        private Random random = new Random();
         private ArrayList questions;
         private int numberOfQuestions;
-        int numCorrect = 0;
+        private string[] questionGroup = new string[5];
+        private string correctAnswer;
+        private string answerSelection;
+        private bool isWinner;
 
         public Trivia()
         {
             readTriviaFile();
+            _gui = new GUI();
         }
 
         private void readTriviaFile()
         {
-            String[] lines = Properties.Resources.TriviaQuestions.Trim().Split(Environment.NewLine);
-            for (int i = 0; i < lines.Length; i++)
-            {
-                lines[i].Trim();
-            }
+            string[] lines = Properties.Resources.TriviaQuestions.Trim().Split(new[] {System.Environment.NewLine}, StringSplitOptions.None);
             questions = new ArrayList(lines);
             numberOfQuestions = lines.Length / 5;
         }
 
-        public String randomQuestion()
+        // a "question group" is defined as the question and four answer choices, with the first answer choice as listed in the file being the correct answer
+        private string[] getRandomQuestionGroup()
         {
-            Random random = new Random();
-            int randomNumber = random.Next(0, numberOfQuestions);
-            return questions[randomNumber].ToString();
-
-        }
-
-        public Boolean purchaseTrivia()
-        {
-
-            return false;
-        }
-
-        /*public Boolean arrowTrivia()
-        {
-            //will be an array
-            Console.WriteLine("How many states are there?\n13\n51\n52\n50");
-            String answer = reader.next();
-            if(answer == "50")
+            int randomNumber = random.Next(0, numberOfQuestions) * 5;
+            int i = 0;
+            for (int j = randomNumber; j < randomNumber + 5; j++)
             {
-                numCorrect++;
+                questionGroup[i++] = (string)questions[j];
             }
-            //ask another question
-            if(numCorrect == 2)
+            removeQuestion(randomNumber);
+            correctAnswer = questionGroup[1];
+            randomizeAnswerChoices();
+            return questionGroup;
+        }
+
+        // removes the question group from the arraylist to avoid repeated questions
+        private void removeQuestion(int startingIndex)
+        {
+            for (int i = startingIndex; i < startingIndex + 5; i++)
             {
-                return true;
-                //call game control
+                questions.RemoveAt(i);
             }
-            return false;
-        } */
-
-        public Boolean secretTrivia()
-        {
-            //asks player trivia questions
-            //returns based on number of answers correct
-            //if true go to askingSecret
-            return true;
         }
 
-        public String askingSecret()
+        // randomizes the answer choices in questionGroup array so that the correct answer no longer appears in a predictable position
+        private void randomizeAnswerChoices()
         {
-            //secrets contained in an array
-            //gives user a hint
-            return null;
+            // fisher-yates shuffle algorithm
+            // i begins at 1 instead of 0 since the question is contained at index zero and should not be included in the randomization
+            for (int i = 1; i < questionGroup.Length; i++)
+            {
+                int j = random.Next(i, questionGroup.Length);
+                string temp = questionGroup[i];
+                questionGroup[i] = questionGroup[j];
+                questionGroup[j] = temp; 
+            }
         }
 
-        public Boolean pitTrivia()
+        public void playTrivia(string type)
         {
-            //asks player trivia questions
-            //returns based on number of answers correct
-            //informs game control
-            return true;
+            int numQuestions = 0;
+            int minCorrect = 0;
+            if (type.Equals("wumpus"))
+            {
+                numQuestions = 5;
+                minCorrect = 3;
+            }
+            else
+            {
+                numQuestions = 3;
+                minCorrect = 2;
+            }
+            askQuestions(numQuestions, minCorrect);
+        }
+
+        private void askQuestions(int numQuestions, int minCorrect)
+        {
+            int numCorrect = 0;
+            for (int i = 0; i < numQuestions; i++)
+            {
+                _gui.displayTrivia(getRandomQuestionGroup());
+                if (answerSelection.Equals(correctAnswer))
+                {
+                    numCorrect++;
+                }
+            }
+            isWinner = (numCorrect >= minCorrect);
+        }
+
+        public void setAnswerSelection(string answerSelection)
+        {
+            this.answerSelection = answerSelection;
+        }
+
+        public bool wonTrivia()
+        {
+            return isWinner;
         }
  
     }
+
 }

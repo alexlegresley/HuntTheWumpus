@@ -8,17 +8,17 @@ namespace WumpusTest
 {
     class GameControl
     {
-
         // instance variables
         private GUI _gui;
         private Cave _cave;
-        private Wumpus.Room _room;
+        private Room _room;
         private Player _player;
         private Hazard _hazard;
         private Trivia _trivia;
         private HighScore _highscore;
         private int turns;
-        private String name;
+        private int currentRoom;
+        private string name;
         private int[] surroundingRooms;
         private int[] availableRooms;
 
@@ -30,15 +30,16 @@ namespace WumpusTest
         {
             _gui        = new GUI();
             _cave       = new Cave();
-            _room       = new Wumpus.Room();
-            _player     = new Player();
+            _room       = new Room();
             _hazard     = new Hazard();
+            _player     = new Player();
             _trivia     = new Trivia();
             _highscore  = new HighScore();
             turns       = 0;
+            currentRoom = _player.getRoomNumber();
         }
 
-        public void setName(String name)
+        public void setName(string name)
         {
             this.name = name;
         }
@@ -46,7 +47,7 @@ namespace WumpusTest
         private void endGame()
         {
             int score = calculateScore();
-            _highscore.addScore(name, score);
+            _highscore.rearrangeScores(name, score);
             _gui.displayMainMenu();
         }
 
@@ -62,8 +63,9 @@ namespace WumpusTest
 
         public void movePlayer(int newRoom)
         {
-            if (_player.getCoins() - 1 > 0)
+            if (_player.getGold() - 1 > 0)
             {
+                _room = _cave.getRoombyRoomNumber(newRoom);
                 surroundingRooms = _room.getSurrounding();
                 availableRooms = _room.getAvailable();
                 _gui.setRoomStates(surroundingRooms, availableRooms);

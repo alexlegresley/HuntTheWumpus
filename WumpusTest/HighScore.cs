@@ -10,14 +10,16 @@ namespace WumpusTest
 {
     public class HighScore
     {
+        // instance variables
         private int[] scores = new int[10];
-        private String[] scoresAsString = new String[10];
+        private string[] scoresAsString = new string[10];
         private List<string> scoresAsArrayList = new List<string>();
+        private string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\HighScores.txt";
 
         public HighScore()
         {
-            scoresAsString = File.ReadAllLines("HighScores.txt");
-            String[] str;
+            scoresAsString = File.ReadAllLines(filePath);
+            string[] str;
             int score;
             for (int i = 0; i < scoresAsString.Length; i++)
             {
@@ -36,7 +38,7 @@ namespace WumpusTest
             }
         }
 
-        public Boolean checkForHighScore(int newScore)
+        public bool checkForHighScore(int newScore)
         {
             if (!isListFull())
             {
@@ -55,7 +57,7 @@ namespace WumpusTest
             }
         }
 
-        public void rearrangeScores(String name, int newScore)
+        public void rearrangeScores(string name, int newScore)
         {
             if (scoresAsArrayList.Count() >= 10)
             {
@@ -77,11 +79,11 @@ namespace WumpusTest
         public void writeToFile()
         {
 
-            File.WriteAllLines("HighScores.txt", scoresAsArrayList);
+            File.WriteAllLines(filePath, scoresAsArrayList);
             
         }
 
-        public Boolean isListFull()
+        public bool isListFull()
         {
             if(scores.Length >= 10)
             {
@@ -92,5 +94,7 @@ namespace WumpusTest
                 return false;
             }
         }
+
     }
+
 }

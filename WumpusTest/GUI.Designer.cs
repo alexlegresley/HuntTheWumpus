@@ -47,22 +47,22 @@
             this.tbName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnGame = new System.Windows.Forms.Panel();
-            this.pbNorth = new System.Windows.Forms.PictureBox();
-            this.pbNorthwest = new System.Windows.Forms.PictureBox();
-            this.pbSouthwest = new System.Windows.Forms.PictureBox();
-            this.pbSouth = new System.Windows.Forms.PictureBox();
-            this.pbSoutheast = new System.Windows.Forms.PictureBox();
             this.pbNortheast = new System.Windows.Forms.PictureBox();
+            this.pbSoutheast = new System.Windows.Forms.PictureBox();
+            this.pbSouth = new System.Windows.Forms.PictureBox();
+            this.pbSouthwest = new System.Windows.Forms.PictureBox();
+            this.pbNorthwest = new System.Windows.Forms.PictureBox();
+            this.pbNorth = new System.Windows.Forms.PictureBox();
             this.pnMainMenu.SuspendLayout();
             this.pnInstructions.SuspendLayout();
             this.pnNameInput.SuspendLayout();
             this.pnGame.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNorthwest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSouthwest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSouth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSoutheast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNortheast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSoutheast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSouth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSouthwest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNorthwest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).BeginInit();
             this.SuspendLayout();
             // 
             // pnMainMenu
@@ -252,52 +252,6 @@
             this.pnGame.Size = new System.Drawing.Size(1466, 800);
             this.pnGame.TabIndex = 3;
             // 
-            // pbNorth
-            // 
-            this.pbNorth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbNorth.Location = new System.Drawing.Point(520, 67);
-            this.pbNorth.Name = "pbNorth";
-            this.pbNorth.Size = new System.Drawing.Size(420, 236);
-            this.pbNorth.TabIndex = 6;
-            this.pbNorth.TabStop = false;
-            this.pbNorth.Click += new System.EventHandler(this.pbNorth_Click);
-            // 
-            // pbNorthwest
-            // 
-            this.pbNorthwest.Location = new System.Drawing.Point(101, 172);
-            this.pbNorthwest.Name = "pbNorthwest";
-            this.pbNorthwest.Size = new System.Drawing.Size(420, 236);
-            this.pbNorthwest.TabIndex = 7;
-            this.pbNorthwest.TabStop = false;
-            this.pbNorthwest.Click += new System.EventHandler(this.pbNorthwest_Click);
-            // 
-            // pbSouthwest
-            // 
-            this.pbSouthwest.Location = new System.Drawing.Point(101, 407);
-            this.pbSouthwest.Name = "pbSouthwest";
-            this.pbSouthwest.Size = new System.Drawing.Size(420, 236);
-            this.pbSouthwest.TabIndex = 8;
-            this.pbSouthwest.TabStop = false;
-            this.pbSouthwest.Click += new System.EventHandler(this.pbSouthwest_Click);
-            // 
-            // pbSouth
-            // 
-            this.pbSouth.Location = new System.Drawing.Point(520, 499);
-            this.pbSouth.Name = "pbSouth";
-            this.pbSouth.Size = new System.Drawing.Size(420, 236);
-            this.pbSouth.TabIndex = 9;
-            this.pbSouth.TabStop = false;
-            this.pbSouth.Click += new System.EventHandler(this.pbSouth_Click);
-            // 
-            // pbSoutheast
-            // 
-            this.pbSoutheast.Location = new System.Drawing.Point(939, 406);
-            this.pbSoutheast.Name = "pbSoutheast";
-            this.pbSoutheast.Size = new System.Drawing.Size(420, 236);
-            this.pbSoutheast.TabIndex = 10;
-            this.pbSoutheast.TabStop = false;
-            this.pbSoutheast.Click += new System.EventHandler(this.pbSoutheast_Click);
-            // 
             // pbNortheast
             // 
             this.pbNortheast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -307,6 +261,56 @@
             this.pbNortheast.TabIndex = 11;
             this.pbNortheast.TabStop = false;
             this.pbNortheast.Click += new System.EventHandler(this.pbNortheast_Click);
+            // 
+            // pbSoutheast
+            // 
+            this.pbSoutheast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbSoutheast.Location = new System.Drawing.Point(939, 406);
+            this.pbSoutheast.Name = "pbSoutheast";
+            this.pbSoutheast.Size = new System.Drawing.Size(420, 236);
+            this.pbSoutheast.TabIndex = 10;
+            this.pbSoutheast.TabStop = false;
+            this.pbSoutheast.Click += new System.EventHandler(this.pbSoutheast_Click);
+            // 
+            // pbSouth
+            // 
+            this.pbSouth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbSouth.Location = new System.Drawing.Point(520, 499);
+            this.pbSouth.Name = "pbSouth";
+            this.pbSouth.Size = new System.Drawing.Size(420, 236);
+            this.pbSouth.TabIndex = 9;
+            this.pbSouth.TabStop = false;
+            this.pbSouth.Click += new System.EventHandler(this.pbSouth_Click);
+            // 
+            // pbSouthwest
+            // 
+            this.pbSouthwest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbSouthwest.Location = new System.Drawing.Point(101, 407);
+            this.pbSouthwest.Name = "pbSouthwest";
+            this.pbSouthwest.Size = new System.Drawing.Size(420, 236);
+            this.pbSouthwest.TabIndex = 8;
+            this.pbSouthwest.TabStop = false;
+            this.pbSouthwest.Click += new System.EventHandler(this.pbSouthwest_Click);
+            // 
+            // pbNorthwest
+            // 
+            this.pbNorthwest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbNorthwest.Location = new System.Drawing.Point(101, 172);
+            this.pbNorthwest.Name = "pbNorthwest";
+            this.pbNorthwest.Size = new System.Drawing.Size(420, 236);
+            this.pbNorthwest.TabIndex = 7;
+            this.pbNorthwest.TabStop = false;
+            this.pbNorthwest.Click += new System.EventHandler(this.pbNorthwest_Click);
+            // 
+            // pbNorth
+            // 
+            this.pbNorth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbNorth.Location = new System.Drawing.Point(520, 67);
+            this.pbNorth.Name = "pbNorth";
+            this.pbNorth.Size = new System.Drawing.Size(420, 236);
+            this.pbNorth.TabIndex = 6;
+            this.pbNorth.TabStop = false;
+            this.pbNorth.Click += new System.EventHandler(this.pbNorth_Click);
             // 
             // GUI
             // 
@@ -325,12 +329,12 @@
             this.pnNameInput.ResumeLayout(false);
             this.pnNameInput.PerformLayout();
             this.pnGame.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNorthwest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSouthwest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSouth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSoutheast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNortheast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSoutheast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSouth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSouthwest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNorthwest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).EndInit();
             this.ResumeLayout(false);
 
         }

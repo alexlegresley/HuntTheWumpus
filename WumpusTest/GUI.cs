@@ -69,69 +69,78 @@ namespace WumpusTest
 
         public void setRoomStates(int[] surroundingRooms, int[] availableRooms)
         {
+            if (containsRoom(surroundingRooms[0], availableRooms))
+            {
+                pbNorth.BackgroundImage = Properties.Resources.North_Door;
+                pbNorth.Enabled = true;
+            }
+            else
+            {
+                pbNorth.BackgroundImage = Properties.Resources.North_NoDoor;
+                pbNorth.Enabled = false;
+            }
+            if (containsRoom(surroundingRooms[1], availableRooms))
+            {
+                pbNortheast.BackgroundImage = Properties.Resources.Northeast_Door;
+                pbNortheast.Enabled = true;
+            }
+            else
+            {
+                pbNortheast.BackgroundImage = Properties.Resources.Northeast_NoDoor;
+                pbNortheast.Enabled = false;
+            }
+            if (containsRoom(surroundingRooms[2], availableRooms))
+            {
+                pbSoutheast.BackgroundImage = Properties.Resources.Southeast_Door;
+                pbSoutheast.Enabled = true;
+            }
+            else
+            {
+                pbSoutheast.BackgroundImage = Properties.Resources.Southeast_NoDoor;
+                pbSoutheast.Enabled = false;
+            }
+            if (containsRoom(surroundingRooms[3], availableRooms))
+            {
+                pbSouth.BackgroundImage = Properties.Resources.South_Door;
+                pbSouth.Enabled = true;
+            }
+            else
+            {
+                pbSouth.BackgroundImage = Properties.Resources.South_NoDoor;
+                pbSouth.Enabled = false;
+            }
+            if (containsRoom(surroundingRooms[4], availableRooms))
+            {
+                pbSouthwest.BackgroundImage = Properties.Resources.Southwest_Door;
+                pbSouthwest.Enabled = true;
+            }
+            else
+            {
+                pbSouthwest.BackgroundImage = Properties.Resources.Southwest_NoDoor;
+                pbSouthwest.Enabled = false;
+            }
+            if (containsRoom(surroundingRooms[5], availableRooms))
+            {
+                pbNorthwest.BackgroundImage = Properties.Resources.Northwest_Door;
+                pbNorthwest.Enabled = true;
+            }
+            else
+            {
+                pbNorthwest.BackgroundImage = Properties.Resources.Northwest_NoDoor;
+                pbNorthwest.Enabled = false;
+            }
+        }
+
+        private bool containsRoom(int target, int[] availableRooms)
+        {
             foreach (int room in availableRooms)
             {
-                if (surroundingRooms[0] == room)
+                if (target == room)
                 {
-                    pbNorth.Image = Properties.Resources.North_Door;
-                    pbNorth.Enabled = true;
-                }
-                else
-                {
-                    pbNorth.Image = Properties.Resources.North_NoDoor;
-                    pbNorth.Enabled = false;
-                }
-                if (surroundingRooms[1] == room)
-                {
-                    pbNortheast.Image = Properties.Resources.Northeast_Door;
-                    pbNortheast.Enabled = true;
-                }
-                else
-                {
-                    pbNortheast.Image = Properties.Resources.Northeast_NoDoor;
-                    pbNortheast.Enabled = false;
-                }
-                if (surroundingRooms[2] == room)
-                {
-                    pbSoutheast.Image = Properties.Resources.Southeast_Door;
-                    pbSoutheast.Enabled = true;
-                }
-                else
-                {
-                    pbSoutheast.Image = Properties.Resources.Southeast_NoDoor;
-                    pbSoutheast.Enabled = false;
-                }
-                if (surroundingRooms[3] == room)
-                {
-                    pbSouth.Image = Properties.Resources.South_Door;
-                    pbSouth.Enabled = true;
-                }
-                else
-                {
-                    pbSouth.Image = Properties.Resources.South_NoDoor;
-                    pbSouth.Enabled = false;
-                }
-                if (surroundingRooms[4] == room)
-                {
-                    pbSouthwest.Image = Properties.Resources.Southwest_Door;
-                    pbSouthwest.Enabled = true;
-                }
-                else
-                {
-                    pbSouthwest.Image = Properties.Resources.Southwest_NoDoor;
-                    pbSouthwest.Enabled = false;
-                }
-                if (surroundingRooms[5] == room)
-                {
-                    pbNorthwest.Image = Properties.Resources.Northwest_Door;
-                    pbNorthwest.Enabled = true;
-                }
-                else
-                {
-                    pbNorthwest.Image = Properties.Resources.Northwest_NoDoor;
-                    pbNorthwest.Enabled = false;
+                    return true;
                 }
             }
+            return false;
         }
 
         private void pbNorth_Click(object sender, EventArgs e)
