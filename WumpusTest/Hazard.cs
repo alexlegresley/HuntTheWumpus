@@ -12,10 +12,9 @@ namespace WumpusTest
         private int currentRoom;
         private int destinationRoom;
 
-        public Hazard(int c, int d)
+        public Hazard(int room)
         {
-            currentRoom = c;
-            destinationRoom = d;
+            currentRoom = room;
         }
 
         public int getCurrentRoom()

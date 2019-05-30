@@ -13,7 +13,8 @@ namespace WumpusTest
         private Cave _cave;
         private Room _room;
         private Player _player;
-        private Hazard _hazard;
+        private Wumpus _wumpus;
+        private HazardManager _hazardManager;
         private Trivia _trivia;
         private HighScore _highscore;
         private int turns;
@@ -31,8 +32,9 @@ namespace WumpusTest
             _gui        = new GUI();
             _cave       = new Cave();
             _room       = new Room();
-            _hazard     = new Hazard();
             _player     = new Player();
+            _hazardManager = new HazardManager(_player.getRoomNumber());
+            _wumpus     = new Wumpus();
             _trivia     = new Trivia();
             _highscore  = new HighScore();
             turns       = 0;
@@ -74,6 +76,13 @@ namespace WumpusTest
             {
                 endGame();
             }  
+        }
+
+        public bool inRoom(int roomNumber)
+        {
+            return _player.getRoomNumber() == roomNumber || _hazard.getBatALocation() == roomNumber ||
+                _hazard.getBatBLocation() == roomNumber || _hazard.getPitALocation() == roomNumber ||
+                _hazard.getPitBLocation() == roomNumber;
         }
 
         public void buyArrow()
