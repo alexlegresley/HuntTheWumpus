@@ -55,7 +55,7 @@ namespace WumpusTest
 
         private int calculateScore()
         {
-            int score = 100 - turns + pc.getCoins() + (5 * pc.getArrows());
+            int score = 100 - turns + _player.getGold() + (5 * _player.getArrows());
             if (!_hazard.wumpusAlive())
             {
                 score += 50;
