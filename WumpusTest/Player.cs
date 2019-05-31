@@ -47,7 +47,7 @@ namespace WumpusTest
             arrow--;
         }
 
-        public int getArrow()
+        public int getArrows()
         {
             return arrow;
         }
