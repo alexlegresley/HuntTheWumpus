@@ -119,10 +119,16 @@ namespace WumpusTest
             // sends an array of adjacent rooms to game locations and receives whether a hazard is adjacent, and what type
             // calls user interface to display a message for the adjacent hazard
         }
-
-        public void shootArrow()
+        public bool wumpusAdjacentPlayer(){
+            return !_wumpus.wumpusAdjacent(_cave.getRoombyRoomNumber(_player.getRoomNumber()));
+            }
+        public void shootArrow(int roomNum)
         {
             _player.SpendAnArrow();
+            if(_wumpus.getWumpusRoom==roomNum){
+                endGame();
+            }
+            _wumpus.updateRoom();
             // call game location with selected room to determine if the Wumpus was in the room to which the arrow was shot
             // if Wumpus is not killed and that was the last arrow, end the game
         }
