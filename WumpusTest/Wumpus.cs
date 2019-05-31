@@ -41,7 +41,7 @@ namespace WumpusTest
         {
             return roomNumber;
         }
-        public boolean wumpusAdjacent(Room myRoom){
+        public bool wumpusAdjacent(Room myRoom){
             for(int k=0;k<6;k++){
                 if(roomNumber==myRoom.getSurrounding()[k]){
                     return true;
