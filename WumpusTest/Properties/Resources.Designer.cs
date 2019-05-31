@@ -61,6 +61,26 @@ namespace WumpusTest.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ArrowTarget {
+            get {
+                object obj = ResourceManager.GetObject("ArrowTarget", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CaveBackground {
+            get {
+                object obj = ResourceManager.GetObject("CaveBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Instructions:
         ///- Objective is to kill the Wumpus by shooting it from an adjacent room
         ///- Use the arrow keys to move around each room
@@ -69,6 +89,16 @@ namespace WumpusTest.Properties {
         internal static string Instructions {
             get {
                 return ResourceManager.GetString("Instructions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainMenuBackground {
+            get {
+                object obj = ResourceManager.GetObject("MainMenuBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -129,6 +159,25 @@ namespace WumpusTest.Properties {
             get {
                 object obj = ResourceManager.GetObject("Northwest_NoDoor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The largest country in Europe is Russia.
+        ///The smallest country in the world is Vatican City.
+        ///Moby Dick is written by Herman Melville.
+        ///The Wumpus likes to eat carrots.
+        ///The largest organ in the human body is the skin.
+        ///The largest internal organ in the human body is the liver.
+        ///In the average lifetime, a person will walk the equivalent of 5 times around the equator.
+        ///Odontophobia is the fear of teeth.
+        ///The capital of Honduras is Tegucigarpa.
+        ///Triskadekaphobia is the fear of the number 13.
+        ///Cats sleep 16 to [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Secrets {
+            get {
+                return ResourceManager.GetString("Secrets", resourceCulture);
             }
         }
         

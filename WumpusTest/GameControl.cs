@@ -78,12 +78,11 @@ namespace WumpusTest
             }  
         }
 
-        public bool inRoom(int roomNumber)
+        private int convertDirectionToRoom(string direction)
         {
-            return _player.getRoomNumber() == roomNumber || _hazard.getBatALocation() == roomNumber ||
-                _hazard.getBatBLocation() == roomNumber || _hazard.getPitALocation() == roomNumber ||
-                _hazard.getPitBLocation() == roomNumber;
+
         }
+
 
         public void buyArrow()
         {

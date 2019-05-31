@@ -93,9 +93,6 @@
     <None Include="Resources\Instructions.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TriviaQuestions.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\North_Door.PNG" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +127,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Southwest_NoDoor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowTarget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TriviaQuestions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Secrets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaveBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuBackground.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

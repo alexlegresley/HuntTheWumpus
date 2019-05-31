@@ -118,3 +118,78 @@ What is the smallest country in Europe?
 	Andorra
 	Monaco
 	Liechtenstein
+With what country is France's longest land border?
+	Brazil
+	Spain
+	Switzerland
+	Argentina
+Where is the world's largest desert?
+	Antartica
+	Australia
+	Africa
+	Arctic
+Where are Bugatti cars made?
+	France
+	Spain
+	Italy
+	Germany
+What company is the world's biggest distributer of toys?
+	McDonalds
+	Toys R Us
+	Fisher-Price
+	Hasbro
+What is the capital of Taiwan?
+	Taipei
+	Beijing
+	Shanghai
+	Hong Kong
+What band is Mick Jagger a member of?
+	Rolling Stones
+	The Beatles
+	Led Zeppelin
+	Pink Floyd
+What MLB team has won the most world series?
+	Yankees
+	Cardinals
+	Giants
+	Red Sox
+Who wrote Moby Dick?
+	Herman Melville
+	Charles Dickens
+	Mark Twain
+	Jane Eyre
+What is the official language of Cambodia?
+	Khmer
+	English
+	Burmese
+	Thai
+What letter follows iota in the Greek alphabet?
+	Kappa
+	Omega
+	Theta
+	Lambda
+What is the only mythological animal in the Chinese Zodiac?
+	Dragon
+	Unicorn
+	Narwhal
+	Centaur
+Kuala Lumpur is the capital city of which country?
+	Malaysia
+	Philippines
+	Indonesia
+	Cambodia
+Which country has the ruble as its currency?
+	Belarus
+	Kosovo
+	Bosnia and Herzegovina
+	India
+What does the N stand for in Nato?
+	North
+	National
+	Naval
+	Nautical
+What is the most common name in the world?
+	Mohammed
+	Alex
+	David
+	John

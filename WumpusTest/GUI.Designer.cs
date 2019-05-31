@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI));
             this.pnMainMenu = new System.Windows.Forms.Panel();
             this.lbWumpus = new System.Windows.Forms.Label();
             this.lbThe = new System.Windows.Forms.Label();
@@ -46,28 +45,100 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnStatusBar = new System.Windows.Forms.Panel();
+            this.tbMessages = new System.Windows.Forms.TextBox();
+            this.lblMessages = new System.Windows.Forms.Label();
+            this.btnCancelArrow = new System.Windows.Forms.Button();
+            this.btnShootArrow = new System.Windows.Forms.Button();
+            this.tbWarnings = new System.Windows.Forms.TextBox();
+            this.lblWarnings = new System.Windows.Forms.Label();
+            this.btnBuySecret = new System.Windows.Forms.Button();
+            this.btnBuyArrow = new System.Windows.Forms.Button();
+            this.lblNumArrows = new System.Windows.Forms.Label();
+            this.lblNumCoins = new System.Windows.Forms.Label();
+            this.lblArrows = new System.Windows.Forms.Label();
+            this.lblCoins = new System.Windows.Forms.Label();
             this.pnGame = new System.Windows.Forms.Panel();
+            this.pbArrowNorthwest = new System.Windows.Forms.PictureBox();
+            this.pbArrowSouthwest = new System.Windows.Forms.PictureBox();
+            this.pbArrowSouth = new System.Windows.Forms.PictureBox();
+            this.pbArrowSoutheast = new System.Windows.Forms.PictureBox();
+            this.pbArrowNortheast = new System.Windows.Forms.PictureBox();
+            this.pbArrowNorth = new System.Windows.Forms.PictureBox();
+            this.lblNumCurrentRoom = new System.Windows.Forms.Label();
+            this.lblCurrentRoom = new System.Windows.Forms.Label();
+            this.lblNorthwest = new System.Windows.Forms.Label();
+            this.lblSouthwest = new System.Windows.Forms.Label();
+            this.lblSouth = new System.Windows.Forms.Label();
+            this.lblSoutheast = new System.Windows.Forms.Label();
+            this.lblNorth = new System.Windows.Forms.Label();
+            this.lblNortheast = new System.Windows.Forms.Label();
             this.pbNortheast = new System.Windows.Forms.PictureBox();
             this.pbSoutheast = new System.Windows.Forms.PictureBox();
             this.pbSouth = new System.Windows.Forms.PictureBox();
             this.pbSouthwest = new System.Windows.Forms.PictureBox();
             this.pbNorthwest = new System.Windows.Forms.PictureBox();
             this.pbNorth = new System.Windows.Forms.PictureBox();
+            this.lblHighScore = new System.Windows.Forms.Label();
+            this.lblRank = new System.Windows.Forms.Label();
+            this.lblPlayerName = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
+            this.lblRank1 = new System.Windows.Forms.Label();
+            this.pnHighScores = new System.Windows.Forms.Panel();
+            this.lblRank2 = new System.Windows.Forms.Label();
+            this.lblRank3 = new System.Windows.Forms.Label();
+            this.lblRank4 = new System.Windows.Forms.Label();
+            this.lblRank5 = new System.Windows.Forms.Label();
+            this.lblRank6 = new System.Windows.Forms.Label();
+            this.lblRank7 = new System.Windows.Forms.Label();
+            this.lblRank8 = new System.Windows.Forms.Label();
+            this.lblRank9 = new System.Windows.Forms.Label();
+            this.lblRank10 = new System.Windows.Forms.Label();
+            this.lblScore1 = new System.Windows.Forms.Label();
+            this.lblScore2 = new System.Windows.Forms.Label();
+            this.lblScore3 = new System.Windows.Forms.Label();
+            this.lblScore4 = new System.Windows.Forms.Label();
+            this.lblScore5 = new System.Windows.Forms.Label();
+            this.lblScore6 = new System.Windows.Forms.Label();
+            this.lblScore7 = new System.Windows.Forms.Label();
+            this.lblScore8 = new System.Windows.Forms.Label();
+            this.lblScore9 = new System.Windows.Forms.Label();
+            this.lblScore10 = new System.Windows.Forms.Label();
+            this.lblPlayerName10 = new System.Windows.Forms.Label();
+            this.lblPlayerName9 = new System.Windows.Forms.Label();
+            this.lblPlayerName8 = new System.Windows.Forms.Label();
+            this.lblPlayerName7 = new System.Windows.Forms.Label();
+            this.lblPlayerName6 = new System.Windows.Forms.Label();
+            this.lblPlayerName5 = new System.Windows.Forms.Label();
+            this.lblPlayerName4 = new System.Windows.Forms.Label();
+            this.lblPlayerName3 = new System.Windows.Forms.Label();
+            this.lblPlayerName2 = new System.Windows.Forms.Label();
+            this.lblPlayerName1 = new System.Windows.Forms.Label();
+            this.btnHighScoreToMainMenu = new System.Windows.Forms.Button();
             this.pnMainMenu.SuspendLayout();
             this.pnInstructions.SuspendLayout();
             this.pnNameInput.SuspendLayout();
+            this.pnStatusBar.SuspendLayout();
             this.pnGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowNorthwest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowSouthwest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowSouth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowSoutheast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowNortheast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowNorth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNortheast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSoutheast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSouth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSouthwest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNorthwest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).BeginInit();
+            this.pnHighScores.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMainMenu
             // 
-            this.pnMainMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnMainMenu.BackgroundImage")));
+            this.pnMainMenu.BackgroundImage = global::WumpusTest.Properties.Resources.MainMenuBackground;
+            this.pnMainMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnMainMenu.Controls.Add(this.lbWumpus);
             this.pnMainMenu.Controls.Add(this.lbThe);
             this.pnMainMenu.Controls.Add(this.lbHunt);
@@ -151,7 +222,8 @@
             // 
             // pnInstructions
             // 
-            this.pnInstructions.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnInstructions.BackgroundImage")));
+            this.pnInstructions.BackgroundImage = global::WumpusTest.Properties.Resources.MainMenuBackground;
+            this.pnInstructions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnInstructions.Controls.Add(this.btnInToMM);
             this.pnInstructions.Controls.Add(this.rtbInstructions);
             this.pnInstructions.Location = new System.Drawing.Point(-1, 0);
@@ -171,6 +243,7 @@
             // 
             // rtbInstructions
             // 
+            this.rtbInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbInstructions.Location = new System.Drawing.Point(224, 71);
             this.rtbInstructions.Name = "rtbInstructions";
             this.rtbInstructions.ReadOnly = true;
@@ -180,7 +253,8 @@
             // 
             // pnNameInput
             // 
-            this.pnNameInput.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnNameInput.BackgroundImage")));
+            this.pnNameInput.BackgroundImage = global::WumpusTest.Properties.Resources.MainMenuBackground;
+            this.pnNameInput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnNameInput.Controls.Add(this.btnStToMM);
             this.pnNameInput.Controls.Add(this.btnDone);
             this.pnNameInput.Controls.Add(this.label2);
@@ -239,8 +313,162 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter Name";
             // 
+            // pnStatusBar
+            // 
+            this.pnStatusBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pnStatusBar.Controls.Add(this.tbMessages);
+            this.pnStatusBar.Controls.Add(this.lblMessages);
+            this.pnStatusBar.Controls.Add(this.btnCancelArrow);
+            this.pnStatusBar.Controls.Add(this.btnShootArrow);
+            this.pnStatusBar.Controls.Add(this.tbWarnings);
+            this.pnStatusBar.Controls.Add(this.lblWarnings);
+            this.pnStatusBar.Controls.Add(this.btnBuySecret);
+            this.pnStatusBar.Controls.Add(this.btnBuyArrow);
+            this.pnStatusBar.Controls.Add(this.lblNumArrows);
+            this.pnStatusBar.Controls.Add(this.lblNumCoins);
+            this.pnStatusBar.Controls.Add(this.lblArrows);
+            this.pnStatusBar.Controls.Add(this.lblCoins);
+            this.pnStatusBar.Location = new System.Drawing.Point(0, 788);
+            this.pnStatusBar.Name = "pnStatusBar";
+            this.pnStatusBar.Size = new System.Drawing.Size(1466, 158);
+            this.pnStatusBar.TabIndex = 6;
+            // 
+            // tbMessages
+            // 
+            this.tbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMessages.Location = new System.Drawing.Point(1065, 89);
+            this.tbMessages.Multiline = true;
+            this.tbMessages.Name = "tbMessages";
+            this.tbMessages.Size = new System.Drawing.Size(381, 31);
+            this.tbMessages.TabIndex = 11;
+            // 
+            // lblMessages
+            // 
+            this.lblMessages.AutoSize = true;
+            this.lblMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessages.Location = new System.Drawing.Point(921, 86);
+            this.lblMessages.Name = "lblMessages";
+            this.lblMessages.Size = new System.Drawing.Size(146, 31);
+            this.lblMessages.TabIndex = 10;
+            this.lblMessages.Text = "Messages:";
+            // 
+            // btnCancelArrow
+            // 
+            this.btnCancelArrow.Location = new System.Drawing.Point(689, 89);
+            this.btnCancelArrow.Name = "btnCancelArrow";
+            this.btnCancelArrow.Size = new System.Drawing.Size(186, 50);
+            this.btnCancelArrow.TabIndex = 9;
+            this.btnCancelArrow.Text = "Cancel Arrow";
+            this.btnCancelArrow.UseVisualStyleBackColor = true;
+            this.btnCancelArrow.Click += new System.EventHandler(this.btnCancelArrow_Click);
+            // 
+            // btnShootArrow
+            // 
+            this.btnShootArrow.Location = new System.Drawing.Point(688, 28);
+            this.btnShootArrow.Name = "btnShootArrow";
+            this.btnShootArrow.Size = new System.Drawing.Size(186, 50);
+            this.btnShootArrow.TabIndex = 8;
+            this.btnShootArrow.Text = "Shoot Arrow";
+            this.btnShootArrow.UseVisualStyleBackColor = true;
+            this.btnShootArrow.Click += new System.EventHandler(this.btnShootArrow_Click);
+            // 
+            // tbWarnings
+            // 
+            this.tbWarnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbWarnings.Location = new System.Drawing.Point(1054, 15);
+            this.tbWarnings.Multiline = true;
+            this.tbWarnings.Name = "tbWarnings";
+            this.tbWarnings.Size = new System.Drawing.Size(392, 31);
+            this.tbWarnings.TabIndex = 7;
+            // 
+            // lblWarnings
+            // 
+            this.lblWarnings.AutoSize = true;
+            this.lblWarnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarnings.Location = new System.Drawing.Point(921, 12);
+            this.lblWarnings.Name = "lblWarnings";
+            this.lblWarnings.Size = new System.Drawing.Size(136, 31);
+            this.lblWarnings.TabIndex = 6;
+            this.lblWarnings.Text = "Warnings:";
+            // 
+            // btnBuySecret
+            // 
+            this.btnBuySecret.Location = new System.Drawing.Point(455, 56);
+            this.btnBuySecret.Name = "btnBuySecret";
+            this.btnBuySecret.Size = new System.Drawing.Size(186, 50);
+            this.btnBuySecret.TabIndex = 5;
+            this.btnBuySecret.Text = "Buy Secret";
+            this.btnBuySecret.UseVisualStyleBackColor = true;
+            this.btnBuySecret.Click += new System.EventHandler(this.btnBuySecret_Click);
+            // 
+            // btnBuyArrow
+            // 
+            this.btnBuyArrow.Location = new System.Drawing.Point(227, 56);
+            this.btnBuyArrow.Name = "btnBuyArrow";
+            this.btnBuyArrow.Size = new System.Drawing.Size(186, 50);
+            this.btnBuyArrow.TabIndex = 4;
+            this.btnBuyArrow.Text = "Buy Arrow";
+            this.btnBuyArrow.UseVisualStyleBackColor = true;
+            this.btnBuyArrow.Click += new System.EventHandler(this.btnBuyArrow_Click);
+            // 
+            // lblNumArrows
+            // 
+            this.lblNumArrows.AutoSize = true;
+            this.lblNumArrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumArrows.Location = new System.Drawing.Point(125, 93);
+            this.lblNumArrows.Name = "lblNumArrows";
+            this.lblNumArrows.Size = new System.Drawing.Size(44, 31);
+            this.lblNumArrows.TabIndex = 3;
+            this.lblNumArrows.Text = "10";
+            // 
+            // lblNumCoins
+            // 
+            this.lblNumCoins.AutoSize = true;
+            this.lblNumCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumCoins.Location = new System.Drawing.Point(111, 42);
+            this.lblNumCoins.Name = "lblNumCoins";
+            this.lblNumCoins.Size = new System.Drawing.Size(59, 31);
+            this.lblNumCoins.TabIndex = 2;
+            this.lblNumCoins.Text = "100";
+            // 
+            // lblArrows
+            // 
+            this.lblArrows.AutoSize = true;
+            this.lblArrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArrows.Location = new System.Drawing.Point(22, 92);
+            this.lblArrows.Name = "lblArrows";
+            this.lblArrows.Size = new System.Drawing.Size(107, 31);
+            this.lblArrows.TabIndex = 1;
+            this.lblArrows.Text = "Arrows:";
+            // 
+            // lblCoins
+            // 
+            this.lblCoins.AutoSize = true;
+            this.lblCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCoins.Location = new System.Drawing.Point(23, 40);
+            this.lblCoins.Name = "lblCoins";
+            this.lblCoins.Size = new System.Drawing.Size(92, 31);
+            this.lblCoins.TabIndex = 0;
+            this.lblCoins.Text = "Coins:";
+            // 
             // pnGame
             // 
+            this.pnGame.BackgroundImage = global::WumpusTest.Properties.Resources.CaveBackground;
+            this.pnGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnGame.Controls.Add(this.pbArrowNorthwest);
+            this.pnGame.Controls.Add(this.pbArrowSouthwest);
+            this.pnGame.Controls.Add(this.pbArrowSouth);
+            this.pnGame.Controls.Add(this.pbArrowSoutheast);
+            this.pnGame.Controls.Add(this.pbArrowNortheast);
+            this.pnGame.Controls.Add(this.pbArrowNorth);
+            this.pnGame.Controls.Add(this.lblNumCurrentRoom);
+            this.pnGame.Controls.Add(this.lblCurrentRoom);
+            this.pnGame.Controls.Add(this.lblNorthwest);
+            this.pnGame.Controls.Add(this.lblSouthwest);
+            this.pnGame.Controls.Add(this.lblSouth);
+            this.pnGame.Controls.Add(this.lblSoutheast);
+            this.pnGame.Controls.Add(this.lblNorth);
+            this.pnGame.Controls.Add(this.lblNortheast);
             this.pnGame.Controls.Add(this.pbNortheast);
             this.pnGame.Controls.Add(this.pbSoutheast);
             this.pnGame.Controls.Add(this.pbSouth);
@@ -249,8 +477,159 @@
             this.pnGame.Controls.Add(this.pbNorth);
             this.pnGame.Location = new System.Drawing.Point(-1, 0);
             this.pnGame.Name = "pnGame";
-            this.pnGame.Size = new System.Drawing.Size(1466, 800);
+            this.pnGame.Size = new System.Drawing.Size(1466, 797);
             this.pnGame.TabIndex = 3;
+            // 
+            // pbArrowNorthwest
+            // 
+            this.pbArrowNorthwest.BackgroundImage = global::WumpusTest.Properties.Resources.ArrowTarget;
+            this.pbArrowNorthwest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbArrowNorthwest.Location = new System.Drawing.Point(101, 172);
+            this.pbArrowNorthwest.Name = "pbArrowNorthwest";
+            this.pbArrowNorthwest.Size = new System.Drawing.Size(420, 236);
+            this.pbArrowNorthwest.TabIndex = 26;
+            this.pbArrowNorthwest.TabStop = false;
+            this.pbArrowNorthwest.Click += new System.EventHandler(this.pbArrowNorthwest_Click);
+            // 
+            // pbArrowSouthwest
+            // 
+            this.pbArrowSouthwest.BackgroundImage = global::WumpusTest.Properties.Resources.ArrowTarget;
+            this.pbArrowSouthwest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbArrowSouthwest.Location = new System.Drawing.Point(101, 406);
+            this.pbArrowSouthwest.Name = "pbArrowSouthwest";
+            this.pbArrowSouthwest.Size = new System.Drawing.Size(420, 236);
+            this.pbArrowSouthwest.TabIndex = 25;
+            this.pbArrowSouthwest.TabStop = false;
+            this.pbArrowSouthwest.Click += new System.EventHandler(this.pbArrowSouthwest_Click);
+            // 
+            // pbArrowSouth
+            // 
+            this.pbArrowSouth.BackgroundImage = global::WumpusTest.Properties.Resources.ArrowTarget;
+            this.pbArrowSouth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbArrowSouth.Location = new System.Drawing.Point(520, 499);
+            this.pbArrowSouth.Name = "pbArrowSouth";
+            this.pbArrowSouth.Size = new System.Drawing.Size(420, 236);
+            this.pbArrowSouth.TabIndex = 24;
+            this.pbArrowSouth.TabStop = false;
+            this.pbArrowSouth.Click += new System.EventHandler(this.pbArrowSouth_Click);
+            // 
+            // pbArrowSoutheast
+            // 
+            this.pbArrowSoutheast.BackgroundImage = global::WumpusTest.Properties.Resources.ArrowTarget;
+            this.pbArrowSoutheast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbArrowSoutheast.Location = new System.Drawing.Point(939, 407);
+            this.pbArrowSoutheast.Name = "pbArrowSoutheast";
+            this.pbArrowSoutheast.Size = new System.Drawing.Size(420, 236);
+            this.pbArrowSoutheast.TabIndex = 23;
+            this.pbArrowSoutheast.TabStop = false;
+            this.pbArrowSoutheast.Click += new System.EventHandler(this.pbArrowSoutheast_Click);
+            // 
+            // pbArrowNortheast
+            // 
+            this.pbArrowNortheast.BackgroundImage = global::WumpusTest.Properties.Resources.ArrowTarget;
+            this.pbArrowNortheast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbArrowNortheast.Location = new System.Drawing.Point(939, 172);
+            this.pbArrowNortheast.Name = "pbArrowNortheast";
+            this.pbArrowNortheast.Size = new System.Drawing.Size(420, 236);
+            this.pbArrowNortheast.TabIndex = 22;
+            this.pbArrowNortheast.TabStop = false;
+            this.pbArrowNortheast.Click += new System.EventHandler(this.pbArrowNortheast_Click);
+            // 
+            // pbArrowNorth
+            // 
+            this.pbArrowNorth.BackgroundImage = global::WumpusTest.Properties.Resources.ArrowTarget;
+            this.pbArrowNorth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbArrowNorth.Location = new System.Drawing.Point(520, 67);
+            this.pbArrowNorth.Name = "pbArrowNorth";
+            this.pbArrowNorth.Size = new System.Drawing.Size(420, 236);
+            this.pbArrowNorth.TabIndex = 21;
+            this.pbArrowNorth.TabStop = false;
+            this.pbArrowNorth.Click += new System.EventHandler(this.pbArrowNorth_Click);
+            // 
+            // lblNumCurrentRoom
+            // 
+            this.lblNumCurrentRoom.AutoSize = true;
+            this.lblNumCurrentRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumCurrentRoom.Location = new System.Drawing.Point(220, 34);
+            this.lblNumCurrentRoom.Name = "lblNumCurrentRoom";
+            this.lblNumCurrentRoom.Size = new System.Drawing.Size(101, 31);
+            this.lblNumCurrentRoom.TabIndex = 20;
+            this.lblNumCurrentRoom.Text = "#Room";
+            // 
+            // lblCurrentRoom
+            // 
+            this.lblCurrentRoom.AutoSize = true;
+            this.lblCurrentRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentRoom.Location = new System.Drawing.Point(31, 34);
+            this.lblCurrentRoom.Name = "lblCurrentRoom";
+            this.lblCurrentRoom.Size = new System.Drawing.Size(192, 31);
+            this.lblCurrentRoom.TabIndex = 19;
+            this.lblCurrentRoom.Text = "Current Room:";
+            // 
+            // lblNorthwest
+            // 
+            this.lblNorthwest.AutoSize = true;
+            this.lblNorthwest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNorthwest.Location = new System.Drawing.Point(7, 273);
+            this.lblNorthwest.Name = "lblNorthwest";
+            this.lblNorthwest.Size = new System.Drawing.Size(86, 31);
+            this.lblNorthwest.TabIndex = 18;
+            this.lblNorthwest.Text = "label8";
+            // 
+            // lblSouthwest
+            // 
+            this.lblSouthwest.AutoSize = true;
+            this.lblSouthwest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSouthwest.Location = new System.Drawing.Point(7, 509);
+            this.lblSouthwest.Name = "lblSouthwest";
+            this.lblSouthwest.Size = new System.Drawing.Size(86, 31);
+            this.lblSouthwest.TabIndex = 17;
+            this.lblSouthwest.Text = "label7";
+            this.lblSouthwest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSouth
+            // 
+            this.lblSouth.AutoSize = true;
+            this.lblSouth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSouth.Location = new System.Drawing.Point(681, 745);
+            this.lblSouth.Name = "lblSouth";
+            this.lblSouth.Size = new System.Drawing.Size(86, 31);
+            this.lblSouth.TabIndex = 16;
+            this.lblSouth.Text = "label6";
+            this.lblSouth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSoutheast
+            // 
+            this.lblSoutheast.AutoSize = true;
+            this.lblSoutheast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoutheast.Location = new System.Drawing.Point(1368, 509);
+            this.lblSoutheast.Name = "lblSoutheast";
+            this.lblSoutheast.Size = new System.Drawing.Size(86, 31);
+            this.lblSoutheast.TabIndex = 15;
+            this.lblSoutheast.Text = "label5";
+            this.lblSoutheast.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNorth
+            // 
+            this.lblNorth.AutoSize = true;
+            this.lblNorth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNorth.Location = new System.Drawing.Point(687, 26);
+            this.lblNorth.Name = "lblNorth";
+            this.lblNorth.Size = new System.Drawing.Size(86, 31);
+            this.lblNorth.TabIndex = 14;
+            this.lblNorth.Text = "label3";
+            this.lblNorth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNortheast
+            // 
+            this.lblNortheast.AutoSize = true;
+            this.lblNortheast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNortheast.Location = new System.Drawing.Point(1368, 269);
+            this.lblNortheast.Name = "lblNortheast";
+            this.lblNortheast.Size = new System.Drawing.Size(86, 31);
+            this.lblNortheast.TabIndex = 13;
+            this.lblNortheast.Text = "label4";
+            this.lblNortheast.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbNortheast
             // 
@@ -312,29 +691,436 @@
             this.pbNorth.TabStop = false;
             this.pbNorth.Click += new System.EventHandler(this.pbNorth_Click);
             // 
+            // lblHighScore
+            // 
+            this.lblHighScore.AutoSize = true;
+            this.lblHighScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHighScore.Location = new System.Drawing.Point(599, 53);
+            this.lblHighScore.Name = "lblHighScore";
+            this.lblHighScore.Size = new System.Drawing.Size(286, 55);
+            this.lblHighScore.TabIndex = 0;
+            this.lblHighScore.Text = "High Scores";
+            // 
+            // lblRank
+            // 
+            this.lblRank.AutoSize = true;
+            this.lblRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank.Location = new System.Drawing.Point(347, 138);
+            this.lblRank.Name = "lblRank";
+            this.lblRank.Size = new System.Drawing.Size(91, 37);
+            this.lblRank.TabIndex = 1;
+            this.lblRank.Text = "Rank";
+            // 
+            // lblPlayerName
+            // 
+            this.lblPlayerName.AutoSize = true;
+            this.lblPlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName.Location = new System.Drawing.Point(986, 138);
+            this.lblPlayerName.Name = "lblPlayerName";
+            this.lblPlayerName.Size = new System.Drawing.Size(201, 37);
+            this.lblPlayerName.TabIndex = 2;
+            this.lblPlayerName.Text = "Player Name";
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Location = new System.Drawing.Point(680, 138);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(100, 37);
+            this.lblScore.TabIndex = 3;
+            this.lblScore.Text = "Score";
+            // 
+            // lblRank1
+            // 
+            this.lblRank1.AutoSize = true;
+            this.lblRank1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank1.Location = new System.Drawing.Point(349, 208);
+            this.lblRank1.Name = "lblRank1";
+            this.lblRank1.Size = new System.Drawing.Size(33, 37);
+            this.lblRank1.TabIndex = 4;
+            this.lblRank1.Text = "1";
+            // 
+            // pnHighScores
+            // 
+            this.pnHighScores.BackgroundImage = global::WumpusTest.Properties.Resources.MainMenuBackground;
+            this.pnHighScores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnHighScores.Controls.Add(this.btnHighScoreToMainMenu);
+            this.pnHighScores.Controls.Add(this.lblPlayerName10);
+            this.pnHighScores.Controls.Add(this.lblPlayerName9);
+            this.pnHighScores.Controls.Add(this.lblPlayerName8);
+            this.pnHighScores.Controls.Add(this.lblPlayerName7);
+            this.pnHighScores.Controls.Add(this.lblPlayerName6);
+            this.pnHighScores.Controls.Add(this.lblPlayerName5);
+            this.pnHighScores.Controls.Add(this.lblPlayerName4);
+            this.pnHighScores.Controls.Add(this.lblPlayerName3);
+            this.pnHighScores.Controls.Add(this.lblPlayerName2);
+            this.pnHighScores.Controls.Add(this.lblPlayerName1);
+            this.pnHighScores.Controls.Add(this.lblScore10);
+            this.pnHighScores.Controls.Add(this.lblScore9);
+            this.pnHighScores.Controls.Add(this.lblScore8);
+            this.pnHighScores.Controls.Add(this.lblScore7);
+            this.pnHighScores.Controls.Add(this.lblScore6);
+            this.pnHighScores.Controls.Add(this.lblScore5);
+            this.pnHighScores.Controls.Add(this.lblScore4);
+            this.pnHighScores.Controls.Add(this.lblScore3);
+            this.pnHighScores.Controls.Add(this.lblScore2);
+            this.pnHighScores.Controls.Add(this.lblScore1);
+            this.pnHighScores.Controls.Add(this.lblRank10);
+            this.pnHighScores.Controls.Add(this.lblRank9);
+            this.pnHighScores.Controls.Add(this.lblRank8);
+            this.pnHighScores.Controls.Add(this.lblRank7);
+            this.pnHighScores.Controls.Add(this.lblRank6);
+            this.pnHighScores.Controls.Add(this.lblRank5);
+            this.pnHighScores.Controls.Add(this.lblRank4);
+            this.pnHighScores.Controls.Add(this.lblRank3);
+            this.pnHighScores.Controls.Add(this.lblRank2);
+            this.pnHighScores.Controls.Add(this.lblRank1);
+            this.pnHighScores.Controls.Add(this.lblScore);
+            this.pnHighScores.Controls.Add(this.lblPlayerName);
+            this.pnHighScores.Controls.Add(this.lblRank);
+            this.pnHighScores.Controls.Add(this.lblHighScore);
+            this.pnHighScores.Location = new System.Drawing.Point(0, 0);
+            this.pnHighScores.Name = "pnHighScores";
+            this.pnHighScores.Size = new System.Drawing.Size(1463, 946);
+            this.pnHighScores.TabIndex = 8;
+            // 
+            // lblRank2
+            // 
+            this.lblRank2.AutoSize = true;
+            this.lblRank2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank2.Location = new System.Drawing.Point(349, 278);
+            this.lblRank2.Name = "lblRank2";
+            this.lblRank2.Size = new System.Drawing.Size(35, 37);
+            this.lblRank2.TabIndex = 5;
+            this.lblRank2.Text = "2";
+            // 
+            // lblRank3
+            // 
+            this.lblRank3.AutoSize = true;
+            this.lblRank3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank3.Location = new System.Drawing.Point(349, 348);
+            this.lblRank3.Name = "lblRank3";
+            this.lblRank3.Size = new System.Drawing.Size(35, 37);
+            this.lblRank3.TabIndex = 6;
+            this.lblRank3.Text = "3";
+            // 
+            // lblRank4
+            // 
+            this.lblRank4.AutoSize = true;
+            this.lblRank4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank4.Location = new System.Drawing.Point(349, 418);
+            this.lblRank4.Name = "lblRank4";
+            this.lblRank4.Size = new System.Drawing.Size(35, 37);
+            this.lblRank4.TabIndex = 7;
+            this.lblRank4.Text = "4";
+            // 
+            // lblRank5
+            // 
+            this.lblRank5.AutoSize = true;
+            this.lblRank5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank5.Location = new System.Drawing.Point(349, 488);
+            this.lblRank5.Name = "lblRank5";
+            this.lblRank5.Size = new System.Drawing.Size(35, 37);
+            this.lblRank5.TabIndex = 8;
+            this.lblRank5.Text = "5";
+            // 
+            // lblRank6
+            // 
+            this.lblRank6.AutoSize = true;
+            this.lblRank6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank6.Location = new System.Drawing.Point(349, 558);
+            this.lblRank6.Name = "lblRank6";
+            this.lblRank6.Size = new System.Drawing.Size(35, 37);
+            this.lblRank6.TabIndex = 9;
+            this.lblRank6.Text = "6";
+            // 
+            // lblRank7
+            // 
+            this.lblRank7.AutoSize = true;
+            this.lblRank7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank7.Location = new System.Drawing.Point(349, 628);
+            this.lblRank7.Name = "lblRank7";
+            this.lblRank7.Size = new System.Drawing.Size(35, 37);
+            this.lblRank7.TabIndex = 10;
+            this.lblRank7.Text = "7";
+            // 
+            // lblRank8
+            // 
+            this.lblRank8.AutoSize = true;
+            this.lblRank8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank8.Location = new System.Drawing.Point(349, 698);
+            this.lblRank8.Name = "lblRank8";
+            this.lblRank8.Size = new System.Drawing.Size(35, 37);
+            this.lblRank8.TabIndex = 11;
+            this.lblRank8.Text = "8";
+            // 
+            // lblRank9
+            // 
+            this.lblRank9.AutoSize = true;
+            this.lblRank9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank9.Location = new System.Drawing.Point(349, 768);
+            this.lblRank9.Name = "lblRank9";
+            this.lblRank9.Size = new System.Drawing.Size(35, 37);
+            this.lblRank9.TabIndex = 12;
+            this.lblRank9.Text = "9";
+            // 
+            // lblRank10
+            // 
+            this.lblRank10.AutoSize = true;
+            this.lblRank10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank10.Location = new System.Drawing.Point(349, 838);
+            this.lblRank10.Name = "lblRank10";
+            this.lblRank10.Size = new System.Drawing.Size(51, 37);
+            this.lblRank10.TabIndex = 13;
+            this.lblRank10.Text = "10";
+            // 
+            // lblScore1
+            // 
+            this.lblScore1.AutoSize = true;
+            this.lblScore1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore1.Location = new System.Drawing.Point(687, 208);
+            this.lblScore1.Name = "lblScore1";
+            this.lblScore1.Size = new System.Drawing.Size(101, 31);
+            this.lblScore1.TabIndex = 14;
+            this.lblScore1.Text = "label13";
+            // 
+            // lblScore2
+            // 
+            this.lblScore2.AutoSize = true;
+            this.lblScore2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore2.Location = new System.Drawing.Point(687, 281);
+            this.lblScore2.Name = "lblScore2";
+            this.lblScore2.Size = new System.Drawing.Size(101, 31);
+            this.lblScore2.TabIndex = 15;
+            this.lblScore2.Text = "label14";
+            // 
+            // lblScore3
+            // 
+            this.lblScore3.AutoSize = true;
+            this.lblScore3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore3.Location = new System.Drawing.Point(687, 348);
+            this.lblScore3.Name = "lblScore3";
+            this.lblScore3.Size = new System.Drawing.Size(101, 31);
+            this.lblScore3.TabIndex = 16;
+            this.lblScore3.Text = "label15";
+            // 
+            // lblScore4
+            // 
+            this.lblScore4.AutoSize = true;
+            this.lblScore4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore4.Location = new System.Drawing.Point(687, 418);
+            this.lblScore4.Name = "lblScore4";
+            this.lblScore4.Size = new System.Drawing.Size(101, 31);
+            this.lblScore4.TabIndex = 17;
+            this.lblScore4.Text = "label16";
+            // 
+            // lblScore5
+            // 
+            this.lblScore5.AutoSize = true;
+            this.lblScore5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore5.Location = new System.Drawing.Point(687, 488);
+            this.lblScore5.Name = "lblScore5";
+            this.lblScore5.Size = new System.Drawing.Size(101, 31);
+            this.lblScore5.TabIndex = 18;
+            this.lblScore5.Text = "label17";
+            // 
+            // lblScore6
+            // 
+            this.lblScore6.AutoSize = true;
+            this.lblScore6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore6.Location = new System.Drawing.Point(687, 558);
+            this.lblScore6.Name = "lblScore6";
+            this.lblScore6.Size = new System.Drawing.Size(101, 31);
+            this.lblScore6.TabIndex = 19;
+            this.lblScore6.Text = "label18";
+            // 
+            // lblScore7
+            // 
+            this.lblScore7.AutoSize = true;
+            this.lblScore7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore7.Location = new System.Drawing.Point(689, 628);
+            this.lblScore7.Name = "lblScore7";
+            this.lblScore7.Size = new System.Drawing.Size(101, 31);
+            this.lblScore7.TabIndex = 20;
+            this.lblScore7.Text = "label19";
+            // 
+            // lblScore8
+            // 
+            this.lblScore8.AutoSize = true;
+            this.lblScore8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore8.Location = new System.Drawing.Point(687, 698);
+            this.lblScore8.Name = "lblScore8";
+            this.lblScore8.Size = new System.Drawing.Size(101, 31);
+            this.lblScore8.TabIndex = 21;
+            this.lblScore8.Text = "label20";
+            // 
+            // lblScore9
+            // 
+            this.lblScore9.AutoSize = true;
+            this.lblScore9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore9.Location = new System.Drawing.Point(687, 768);
+            this.lblScore9.Name = "lblScore9";
+            this.lblScore9.Size = new System.Drawing.Size(101, 31);
+            this.lblScore9.TabIndex = 22;
+            this.lblScore9.Text = "label21";
+            // 
+            // lblScore10
+            // 
+            this.lblScore10.AutoSize = true;
+            this.lblScore10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore10.Location = new System.Drawing.Point(687, 838);
+            this.lblScore10.Name = "lblScore10";
+            this.lblScore10.Size = new System.Drawing.Size(101, 31);
+            this.lblScore10.TabIndex = 23;
+            this.lblScore10.Text = "label22";
+            // 
+            // lblPlayerName10
+            // 
+            this.lblPlayerName10.AutoSize = true;
+            this.lblPlayerName10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName10.Location = new System.Drawing.Point(987, 838);
+            this.lblPlayerName10.Name = "lblPlayerName10";
+            this.lblPlayerName10.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName10.TabIndex = 33;
+            this.lblPlayerName10.Text = "label23";
+            // 
+            // lblPlayerName9
+            // 
+            this.lblPlayerName9.AutoSize = true;
+            this.lblPlayerName9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName9.Location = new System.Drawing.Point(987, 768);
+            this.lblPlayerName9.Name = "lblPlayerName9";
+            this.lblPlayerName9.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName9.TabIndex = 32;
+            this.lblPlayerName9.Text = "label24";
+            // 
+            // lblPlayerName8
+            // 
+            this.lblPlayerName8.AutoSize = true;
+            this.lblPlayerName8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName8.Location = new System.Drawing.Point(987, 698);
+            this.lblPlayerName8.Name = "lblPlayerName8";
+            this.lblPlayerName8.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName8.TabIndex = 31;
+            this.lblPlayerName8.Text = "label25";
+            // 
+            // lblPlayerName7
+            // 
+            this.lblPlayerName7.AutoSize = true;
+            this.lblPlayerName7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName7.Location = new System.Drawing.Point(989, 628);
+            this.lblPlayerName7.Name = "lblPlayerName7";
+            this.lblPlayerName7.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName7.TabIndex = 30;
+            this.lblPlayerName7.Text = "label26";
+            // 
+            // lblPlayerName6
+            // 
+            this.lblPlayerName6.AutoSize = true;
+            this.lblPlayerName6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName6.Location = new System.Drawing.Point(987, 558);
+            this.lblPlayerName6.Name = "lblPlayerName6";
+            this.lblPlayerName6.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName6.TabIndex = 29;
+            this.lblPlayerName6.Text = "label27";
+            // 
+            // lblPlayerName5
+            // 
+            this.lblPlayerName5.AutoSize = true;
+            this.lblPlayerName5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName5.Location = new System.Drawing.Point(987, 488);
+            this.lblPlayerName5.Name = "lblPlayerName5";
+            this.lblPlayerName5.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName5.TabIndex = 28;
+            this.lblPlayerName5.Text = "label28";
+            // 
+            // lblPlayerName4
+            // 
+            this.lblPlayerName4.AutoSize = true;
+            this.lblPlayerName4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName4.Location = new System.Drawing.Point(987, 418);
+            this.lblPlayerName4.Name = "lblPlayerName4";
+            this.lblPlayerName4.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName4.TabIndex = 27;
+            this.lblPlayerName4.Text = "label29";
+            // 
+            // lblPlayerName3
+            // 
+            this.lblPlayerName3.AutoSize = true;
+            this.lblPlayerName3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName3.Location = new System.Drawing.Point(987, 348);
+            this.lblPlayerName3.Name = "lblPlayerName3";
+            this.lblPlayerName3.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName3.TabIndex = 26;
+            this.lblPlayerName3.Text = "label30";
+            // 
+            // lblPlayerName2
+            // 
+            this.lblPlayerName2.AutoSize = true;
+            this.lblPlayerName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName2.Location = new System.Drawing.Point(987, 281);
+            this.lblPlayerName2.Name = "lblPlayerName2";
+            this.lblPlayerName2.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName2.TabIndex = 25;
+            this.lblPlayerName2.Text = "label31";
+            // 
+            // lblPlayerName1
+            // 
+            this.lblPlayerName1.AutoSize = true;
+            this.lblPlayerName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName1.Location = new System.Drawing.Point(987, 208);
+            this.lblPlayerName1.Name = "lblPlayerName1";
+            this.lblPlayerName1.Size = new System.Drawing.Size(101, 31);
+            this.lblPlayerName1.TabIndex = 24;
+            this.lblPlayerName1.Text = "label32";
+            // 
+            // btnHighScoreToMainMenu
+            // 
+            this.btnHighScoreToMainMenu.Location = new System.Drawing.Point(58, 824);
+            this.btnHighScoreToMainMenu.Name = "btnHighScoreToMainMenu";
+            this.btnHighScoreToMainMenu.Size = new System.Drawing.Size(165, 90);
+            this.btnHighScoreToMainMenu.TabIndex = 34;
+            this.btnHighScoreToMainMenu.Text = "Back";
+            this.btnHighScoreToMainMenu.UseVisualStyleBackColor = true;
+            this.btnHighScoreToMainMenu.Click += new System.EventHandler(this.btnHighScoreToMainMenu_Click);
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1462, 946);
-            this.Controls.Add(this.pnGame);
-            this.Controls.Add(this.pnNameInput);
-            this.Controls.Add(this.pnMainMenu);
             this.Controls.Add(this.pnInstructions);
+            this.Controls.Add(this.pnGame);
+            this.Controls.Add(this.pnStatusBar);
+            this.Controls.Add(this.pnNameInput);
+            this.Controls.Add(this.pnHighScores);
+            this.Controls.Add(this.pnMainMenu);
             this.Name = "GUI";
             this.pnMainMenu.ResumeLayout(false);
             this.pnMainMenu.PerformLayout();
             this.pnInstructions.ResumeLayout(false);
             this.pnNameInput.ResumeLayout(false);
             this.pnNameInput.PerformLayout();
+            this.pnStatusBar.ResumeLayout(false);
+            this.pnStatusBar.PerformLayout();
             this.pnGame.ResumeLayout(false);
+            this.pnGame.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowNorthwest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowSouthwest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowSouth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowSoutheast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowNortheast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArrowNorth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNortheast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSoutheast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSouth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSouthwest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNorthwest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).EndInit();
+            this.pnHighScores.ResumeLayout(false);
+            this.pnHighScores.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -365,6 +1151,69 @@
         private System.Windows.Forms.PictureBox pbSouthwest;
         private System.Windows.Forms.PictureBox pbNorthwest;
         private System.Windows.Forms.PictureBox pbNorth;
+        private System.Windows.Forms.Label lblNorthwest;
+        private System.Windows.Forms.Label lblSouthwest;
+        private System.Windows.Forms.Label lblSouth;
+        private System.Windows.Forms.Label lblSoutheast;
+        private System.Windows.Forms.Label lblNorth;
+        private System.Windows.Forms.Label lblNortheast;
+        private System.Windows.Forms.Panel pnStatusBar;
+        private System.Windows.Forms.Button btnBuySecret;
+        private System.Windows.Forms.Button btnBuyArrow;
+        private System.Windows.Forms.Label lblNumArrows;
+        private System.Windows.Forms.Label lblNumCoins;
+        private System.Windows.Forms.Label lblArrows;
+        private System.Windows.Forms.Label lblCoins;
+        private System.Windows.Forms.Label lblNumCurrentRoom;
+        private System.Windows.Forms.Label lblCurrentRoom;
+        private System.Windows.Forms.Button btnCancelArrow;
+        private System.Windows.Forms.Button btnShootArrow;
+        private System.Windows.Forms.TextBox tbWarnings;
+        private System.Windows.Forms.Label lblWarnings;
+        private System.Windows.Forms.PictureBox pbArrowNorthwest;
+        private System.Windows.Forms.PictureBox pbArrowSouthwest;
+        private System.Windows.Forms.PictureBox pbArrowSouth;
+        private System.Windows.Forms.PictureBox pbArrowSoutheast;
+        private System.Windows.Forms.PictureBox pbArrowNortheast;
+        private System.Windows.Forms.PictureBox pbArrowNorth;
+        private System.Windows.Forms.TextBox tbMessages;
+        private System.Windows.Forms.Label lblMessages;
+        private System.Windows.Forms.Panel pnHighScores;
+        private System.Windows.Forms.Label lblPlayerName10;
+        private System.Windows.Forms.Label lblPlayerName9;
+        private System.Windows.Forms.Label lblPlayerName8;
+        private System.Windows.Forms.Label lblPlayerName7;
+        private System.Windows.Forms.Label lblPlayerName6;
+        private System.Windows.Forms.Label lblPlayerName5;
+        private System.Windows.Forms.Label lblPlayerName4;
+        private System.Windows.Forms.Label lblPlayerName3;
+        private System.Windows.Forms.Label lblPlayerName2;
+        private System.Windows.Forms.Label lblPlayerName1;
+        private System.Windows.Forms.Label lblScore10;
+        private System.Windows.Forms.Label lblScore9;
+        private System.Windows.Forms.Label lblScore8;
+        private System.Windows.Forms.Label lblScore7;
+        private System.Windows.Forms.Label lblScore6;
+        private System.Windows.Forms.Label lblScore5;
+        private System.Windows.Forms.Label lblScore4;
+        private System.Windows.Forms.Label lblScore3;
+        private System.Windows.Forms.Label lblScore2;
+        private System.Windows.Forms.Label lblScore1;
+        private System.Windows.Forms.Label lblRank10;
+        private System.Windows.Forms.Label lblRank9;
+        private System.Windows.Forms.Label lblRank8;
+        private System.Windows.Forms.Label lblRank7;
+        private System.Windows.Forms.Label lblRank6;
+        private System.Windows.Forms.Label lblRank5;
+        private System.Windows.Forms.Label lblRank4;
+        private System.Windows.Forms.Label lblRank3;
+        private System.Windows.Forms.Label lblRank2;
+        private System.Windows.Forms.Label lblRank1;
+        private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Label lblPlayerName;
+        private System.Windows.Forms.Label lblRank;
+        private System.Windows.Forms.Label lblHighScore;
+        private System.Windows.Forms.Button btnHighScoreToMainMenu;
     }
 }
 
