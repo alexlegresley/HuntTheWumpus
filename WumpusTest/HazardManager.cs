@@ -54,6 +54,15 @@ namespace WumpusTest
                 }
             }
         }
+        public string HazardIdentity(int roomNum){
+            if(roomNum==batARoom || roomNum==batBRoom){
+                return "bat";
+            }
+            if(roomNum==pitARoom || roomNum==pitBRoom){
+               return "pit";   
+            }
+            return "nothing";
+        }
         public int getBatBRoom()
         {
             return batBRoom;
