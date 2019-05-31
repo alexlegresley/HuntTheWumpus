@@ -46,7 +46,14 @@ namespace WumpusTest
         {
             return batARoom;
         }
-
+        public boolean isHazardAdjacent(Room testRoom){
+            for(int k=0;k<6;k++){
+                int test=testRoom.getSurrounding()[k];
+                if(test==batARoom || test==batBRoom ||test==pitARoom ||test==pitBRoom){
+                    return true;
+                }
+            }
+        }
         public int getBatBRoom()
         {
             return batBRoom;
