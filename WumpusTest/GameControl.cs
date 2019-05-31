@@ -115,12 +115,14 @@ namespace WumpusTest
 
         public void hazardsAdjacent()
         {
+            // this method is more or less implemented in HazardManager
             // sends an array of adjacent rooms to game locations and receives whether a hazard is adjacent, and what type
             // calls user interface to display a message for the adjacent hazard
         }
 
         public void shootArrow()
         {
+            _player.SpendAnArrow();
             // call game location with selected room to determine if the Wumpus was in the room to which the arrow was shot
             // if Wumpus is not killed and that was the last arrow, end the game
         }
