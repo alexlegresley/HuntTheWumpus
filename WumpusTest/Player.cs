@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +10,14 @@ namespace WumpusTest
     {
 
         // instance variables
-        private int arrow;
-        private int gold;
+        private int arrows;
+        private int coins;
         private int roomNumber;
         // constructor
         public Player()
         {
-            gold = 100;
-            arrow = 0;
+            coins = 100;
+            arrows = 0;
             Random RNG = new Random();
             roomNumber = getValidRoomNumber(RNG);
         }
@@ -27,50 +27,46 @@ namespace WumpusTest
             return RNG.Next(29) + 1;
         }
         // this allows gold amount to be changed
-        public void setGold(int k)
+        public void setCoins(int k)
         {
-            gold = k;
+            coins = k;
+        }
+        public void addOneCoin()
+        {
+            coins++;
         }
         // often gold is being reduced by one so this method is for convenience
-        public void spendOneGold()
+        public void spendOneCoin()
         {
-            gold--;
+            coins--;
         }
-        // often arrows are being increased by one so this method is for convenience
-        public void addOneArrow()
+        // often arrows are being increased by two so this method is for convenience
+        public void addTwoArrows()
         {
-            arrow++;
+            arrows += 2;
         }
         // often arrows are being decreased by one so this method is for convenience
         public void SpendAnArrow()
         {
-            arrow--;
+            arrows--;
         }
-        // simple accessor
+        // simple accessors
         public int getArrows()
         {
-            return arrow;
+            return arrows;
         }
-        // simple accessor
-        public int getGold()
+
+        public int getCoins()
         {
-            return gold;
+            return coins;
         }
-        // simple mutator
+
         public int getRoomNumber()
         {
             return roomNumber;
         }
-        // a method gc can call to see if the game needs to be ended instantly
-        public bool CanCanContinuePlaying()
-        {
-            if (arrow < 0 || gold < 0)
-            {
-                return false;
-            }
-            return true;
-        }
-        // simple mutator that checks if a valid roomNumber was passed
+        // precondition: k is between 1-30 inclusive
+        // postcondition: if k is a valid int between 1-30 that will become the player's new room number
         public void setRoomNumber(int k)
         {
             if (k <= 30)
@@ -82,6 +78,4 @@ namespace WumpusTest
     }
 
 }
-
-
 
