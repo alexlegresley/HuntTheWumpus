@@ -1,4 +1,4 @@
-﻿using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,21 +8,22 @@ namespace WumpusTest
 {
     class HazardManager
     {
-        // purpose of this object is to handle all interactions with hazards so that game control does not have to interact with
+
+        // purpose of this object is to handle all interactions with hazards 
+        // so that game control does not have to interact with
         // each individual hazard but rather this hazard manager
         // instance variables
         Random random = new Random();
-        // these variable represent each hazards location
         private int batARoom;
         private int batBRoom;
         private int pitARoom;
         private int pitBRoom;
-        // this takes in the player's room so that the player doesn't start next to a hazard
+
         public HazardManager(int playerRoom)
         {
             setLocations(playerRoom);
         }
-        
+
         private void setLocations(int playerRoom)
         {   // essentially this method calls a seperate method that gives a room that has nothing in it and sets each hazard to that
             batARoom = batBRoom = pitARoom = pitBRoom = -1;
@@ -43,29 +44,32 @@ namespace WumpusTest
                rand == pitARoom || rand == pitBRoom);
             return rand;
         }
-        // simple accessor
+
+       
+
+        public int carryPlayerToNewRoom(int currentPlayerRoom)
+        {
+            // get a new room for the bat to carry the player to
+            int newPlayerRoom = getNum(currentPlayerRoom);
+            /* determine the bat that carried the player to the new room and reset its
+               location in another random room */
+            if (batARoom == currentPlayerRoom)
+            {
+                batARoom = getNum(newPlayerRoom);
+            }
+            else
+            {
+                batBRoom = getNum(newPlayerRoom);
+            }
+            // return the new player room
+            return newPlayerRoom;
+        }
+        // simple accessors
         public int getBatARoom()
         {
             return batARoom;
-        } // allows game control to check if there is a hazard in an adjacent room to do the appropriate warnings
-        public bool isHazardAdjacent(Room testRoom){
-            for(int k=0;k<6;k++){
-                int test=testRoom.getSurrounding()[k];
-                if(test==batARoom || test==batBRoom ||test==pitARoom ||test==pitBRoom){
-                    return true;
-                }
-            }
-        } // returns the identity of the Hazard in a given room as a String
-        public string HazardIdentity(int roomNum){
-            if(roomNum==batARoom || roomNum==batBRoom){
-                return "bat";
-            }
-            if(roomNum==pitARoom || roomNum==pitBRoom){
-               return "pit";   
-            }
-            return "nothing";
         }
-        // simple accessors
+
         public int getBatBRoom()
         {
             return batBRoom;
@@ -75,12 +79,23 @@ namespace WumpusTest
         {
             return pitARoom;
         }
-        
+
         public int getPitBRoom()
         {
             return pitBRoom;
         }
 
-    }
+        // place the pit that the player encountered in a new random room
+        public void resetPitRoom(int currentPlayerRoom)
+        {
+            if (pitARoom == currentPlayerRoom)
+            {
+                pitARoom = getNum(currentPlayerRoom);
+            }
+            else
+            {
+                pitBRoom = getNum(currentPlayerRoom);
+            }
+        }
 
-}
+    }
