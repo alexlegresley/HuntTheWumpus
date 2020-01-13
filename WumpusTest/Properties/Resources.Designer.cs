@@ -166,14 +166,15 @@ namespace WumpusTest.Properties {
         ///   Looks up a localized string similar to The largest country in Europe is Russia.
         ///The smallest country in the world is Vatican City.
         ///Moby Dick is written by Herman Melville.
+        ///Bats are in room
         ///The Wumpus likes to eat carrots.
         ///The largest organ in the human body is the skin.
         ///The largest internal organ in the human body is the liver.
         ///In the average lifetime, a person will walk the equivalent of 5 times around the equator.
         ///Odontophobia is the fear of teeth.
+        ///You are in room
         ///The capital of Honduras is Tegucigarpa.
-        ///Triskadekaphobia is the fear of the number 13.
-        ///Cats sleep 16 to [rest of string was truncated]&quot;;.
+        ///Triskadekaphobia is the fear  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Secrets {
             get {

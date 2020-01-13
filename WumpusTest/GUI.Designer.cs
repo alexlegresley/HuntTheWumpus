@@ -32,7 +32,6 @@
             this.lbWumpus = new System.Windows.Forms.Label();
             this.lbThe = new System.Windows.Forms.Label();
             this.lbHunt = new System.Windows.Forms.Label();
-            this.btnTest = new System.Windows.Forms.Button();
             this.btnInstructions = new System.Windows.Forms.Button();
             this.btnHighScores = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
@@ -85,25 +84,7 @@
             this.lblScore = new System.Windows.Forms.Label();
             this.lblRank1 = new System.Windows.Forms.Label();
             this.pnHighScores = new System.Windows.Forms.Panel();
-            this.lblRank2 = new System.Windows.Forms.Label();
-            this.lblRank3 = new System.Windows.Forms.Label();
-            this.lblRank4 = new System.Windows.Forms.Label();
-            this.lblRank5 = new System.Windows.Forms.Label();
-            this.lblRank6 = new System.Windows.Forms.Label();
-            this.lblRank7 = new System.Windows.Forms.Label();
-            this.lblRank8 = new System.Windows.Forms.Label();
-            this.lblRank9 = new System.Windows.Forms.Label();
-            this.lblRank10 = new System.Windows.Forms.Label();
-            this.lblScore1 = new System.Windows.Forms.Label();
-            this.lblScore2 = new System.Windows.Forms.Label();
-            this.lblScore3 = new System.Windows.Forms.Label();
-            this.lblScore4 = new System.Windows.Forms.Label();
-            this.lblScore5 = new System.Windows.Forms.Label();
-            this.lblScore6 = new System.Windows.Forms.Label();
-            this.lblScore7 = new System.Windows.Forms.Label();
-            this.lblScore8 = new System.Windows.Forms.Label();
-            this.lblScore9 = new System.Windows.Forms.Label();
-            this.lblScore10 = new System.Windows.Forms.Label();
+            this.btnHighScoreToMainMenu = new System.Windows.Forms.Button();
             this.lblPlayerName10 = new System.Windows.Forms.Label();
             this.lblPlayerName9 = new System.Windows.Forms.Label();
             this.lblPlayerName8 = new System.Windows.Forms.Label();
@@ -114,7 +95,36 @@
             this.lblPlayerName3 = new System.Windows.Forms.Label();
             this.lblPlayerName2 = new System.Windows.Forms.Label();
             this.lblPlayerName1 = new System.Windows.Forms.Label();
-            this.btnHighScoreToMainMenu = new System.Windows.Forms.Button();
+            this.lblScore10 = new System.Windows.Forms.Label();
+            this.lblScore9 = new System.Windows.Forms.Label();
+            this.lblScore8 = new System.Windows.Forms.Label();
+            this.lblScore7 = new System.Windows.Forms.Label();
+            this.lblScore6 = new System.Windows.Forms.Label();
+            this.lblScore5 = new System.Windows.Forms.Label();
+            this.lblScore4 = new System.Windows.Forms.Label();
+            this.lblScore3 = new System.Windows.Forms.Label();
+            this.lblScore2 = new System.Windows.Forms.Label();
+            this.lblScore1 = new System.Windows.Forms.Label();
+            this.lblRank10 = new System.Windows.Forms.Label();
+            this.lblRank9 = new System.Windows.Forms.Label();
+            this.lblRank8 = new System.Windows.Forms.Label();
+            this.lblRank7 = new System.Windows.Forms.Label();
+            this.lblRank6 = new System.Windows.Forms.Label();
+            this.lblRank5 = new System.Windows.Forms.Label();
+            this.lblRank4 = new System.Windows.Forms.Label();
+            this.lblRank3 = new System.Windows.Forms.Label();
+            this.lblRank2 = new System.Windows.Forms.Label();
+            this.pnTrivia = new System.Windows.Forms.Panel();
+            this.btnAnswer4 = new System.Windows.Forms.Button();
+            this.btnAnswer3 = new System.Windows.Forms.Button();
+            this.btnAnswer2 = new System.Windows.Forms.Button();
+            this.btnAnswer1 = new System.Windows.Forms.Button();
+            this.tbQuestion = new System.Windows.Forms.TextBox();
+            this.pnEndScreen = new System.Windows.Forms.Panel();
+            this.btnEndScreenToMainMenu = new System.Windows.Forms.Button();
+            this.lblNumFinalScore = new System.Windows.Forms.Label();
+            this.lblFinalScore = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.pnMainMenu.SuspendLayout();
             this.pnInstructions.SuspendLayout();
             this.pnNameInput.SuspendLayout();
@@ -133,6 +143,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbNorthwest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).BeginInit();
             this.pnHighScores.SuspendLayout();
+            this.pnTrivia.SuspendLayout();
+            this.pnEndScreen.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMainMenu
@@ -142,7 +154,6 @@
             this.pnMainMenu.Controls.Add(this.lbWumpus);
             this.pnMainMenu.Controls.Add(this.lbThe);
             this.pnMainMenu.Controls.Add(this.lbHunt);
-            this.pnMainMenu.Controls.Add(this.btnTest);
             this.pnMainMenu.Controls.Add(this.btnInstructions);
             this.pnMainMenu.Controls.Add(this.btnHighScores);
             this.pnMainMenu.Controls.Add(this.btnStart);
@@ -181,18 +192,9 @@
             this.lbHunt.TabIndex = 5;
             this.lbHunt.Text = "Hunt";
             // 
-            // btnTest
-            // 
-            this.btnTest.Location = new System.Drawing.Point(858, 755);
-            this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(295, 99);
-            this.btnTest.TabIndex = 4;
-            this.btnTest.Text = "Test";
-            this.btnTest.UseVisualStyleBackColor = true;
-            // 
             // btnInstructions
             // 
-            this.btnInstructions.Location = new System.Drawing.Point(858, 527);
+            this.btnInstructions.Location = new System.Drawing.Point(884, 584);
             this.btnInstructions.Name = "btnInstructions";
             this.btnInstructions.Size = new System.Drawing.Size(295, 99);
             this.btnInstructions.TabIndex = 3;
@@ -202,7 +204,7 @@
             // 
             // btnHighScores
             // 
-            this.btnHighScores.Location = new System.Drawing.Point(858, 293);
+            this.btnHighScores.Location = new System.Drawing.Point(884, 350);
             this.btnHighScores.Name = "btnHighScores";
             this.btnHighScores.Size = new System.Drawing.Size(295, 99);
             this.btnHighScores.TabIndex = 2;
@@ -212,7 +214,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(858, 71);
+            this.btnStart.Location = new System.Drawing.Point(884, 128);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(295, 99);
             this.btnStart.TabIndex = 1;
@@ -328,25 +330,26 @@
             this.pnStatusBar.Controls.Add(this.lblNumCoins);
             this.pnStatusBar.Controls.Add(this.lblArrows);
             this.pnStatusBar.Controls.Add(this.lblCoins);
-            this.pnStatusBar.Location = new System.Drawing.Point(0, 788);
+            this.pnStatusBar.Location = new System.Drawing.Point(0, 787);
             this.pnStatusBar.Name = "pnStatusBar";
-            this.pnStatusBar.Size = new System.Drawing.Size(1466, 158);
+            this.pnStatusBar.Size = new System.Drawing.Size(1466, 160);
             this.pnStatusBar.TabIndex = 6;
             // 
             // tbMessages
             // 
             this.tbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMessages.Location = new System.Drawing.Point(1065, 89);
+            this.tbMessages.Location = new System.Drawing.Point(1065, 100);
             this.tbMessages.Multiline = true;
             this.tbMessages.Name = "tbMessages";
-            this.tbMessages.Size = new System.Drawing.Size(381, 31);
+            this.tbMessages.ReadOnly = true;
+            this.tbMessages.Size = new System.Drawing.Size(381, 38);
             this.tbMessages.TabIndex = 11;
             // 
             // lblMessages
             // 
             this.lblMessages.AutoSize = true;
             this.lblMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessages.Location = new System.Drawing.Point(921, 86);
+            this.lblMessages.Location = new System.Drawing.Point(921, 100);
             this.lblMessages.Name = "lblMessages";
             this.lblMessages.Size = new System.Drawing.Size(146, 31);
             this.lblMessages.TabIndex = 10;
@@ -354,6 +357,7 @@
             // 
             // btnCancelArrow
             // 
+            this.btnCancelArrow.Enabled = false;
             this.btnCancelArrow.Location = new System.Drawing.Point(689, 89);
             this.btnCancelArrow.Name = "btnCancelArrow";
             this.btnCancelArrow.Size = new System.Drawing.Size(186, 50);
@@ -375,17 +379,18 @@
             // tbWarnings
             // 
             this.tbWarnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbWarnings.Location = new System.Drawing.Point(1054, 15);
+            this.tbWarnings.Location = new System.Drawing.Point(1054, 26);
             this.tbWarnings.Multiline = true;
             this.tbWarnings.Name = "tbWarnings";
-            this.tbWarnings.Size = new System.Drawing.Size(392, 31);
+            this.tbWarnings.ReadOnly = true;
+            this.tbWarnings.Size = new System.Drawing.Size(392, 38);
             this.tbWarnings.TabIndex = 7;
             // 
             // lblWarnings
             // 
             this.lblWarnings.AutoSize = true;
             this.lblWarnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarnings.Location = new System.Drawing.Point(921, 12);
+            this.lblWarnings.Location = new System.Drawing.Point(921, 28);
             this.lblWarnings.Name = "lblWarnings";
             this.lblWarnings.Size = new System.Drawing.Size(136, 31);
             this.lblWarnings.TabIndex = 6;
@@ -477,7 +482,7 @@
             this.pnGame.Controls.Add(this.pbNorth);
             this.pnGame.Location = new System.Drawing.Point(-1, 0);
             this.pnGame.Name = "pnGame";
-            this.pnGame.Size = new System.Drawing.Size(1466, 797);
+            this.pnGame.Size = new System.Drawing.Size(1466, 805);
             this.pnGame.TabIndex = 3;
             // 
             // pbArrowNorthwest
@@ -495,7 +500,7 @@
             // 
             this.pbArrowSouthwest.BackgroundImage = global::WumpusTest.Properties.Resources.ArrowTarget;
             this.pbArrowSouthwest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbArrowSouthwest.Location = new System.Drawing.Point(101, 406);
+            this.pbArrowSouthwest.Location = new System.Drawing.Point(101, 409);
             this.pbArrowSouthwest.Name = "pbArrowSouthwest";
             this.pbArrowSouthwest.Size = new System.Drawing.Size(420, 236);
             this.pbArrowSouthwest.TabIndex = 25;
@@ -785,195 +790,15 @@
             this.pnHighScores.Size = new System.Drawing.Size(1463, 946);
             this.pnHighScores.TabIndex = 8;
             // 
-            // lblRank2
+            // btnHighScoreToMainMenu
             // 
-            this.lblRank2.AutoSize = true;
-            this.lblRank2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank2.Location = new System.Drawing.Point(349, 278);
-            this.lblRank2.Name = "lblRank2";
-            this.lblRank2.Size = new System.Drawing.Size(35, 37);
-            this.lblRank2.TabIndex = 5;
-            this.lblRank2.Text = "2";
-            // 
-            // lblRank3
-            // 
-            this.lblRank3.AutoSize = true;
-            this.lblRank3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank3.Location = new System.Drawing.Point(349, 348);
-            this.lblRank3.Name = "lblRank3";
-            this.lblRank3.Size = new System.Drawing.Size(35, 37);
-            this.lblRank3.TabIndex = 6;
-            this.lblRank3.Text = "3";
-            // 
-            // lblRank4
-            // 
-            this.lblRank4.AutoSize = true;
-            this.lblRank4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank4.Location = new System.Drawing.Point(349, 418);
-            this.lblRank4.Name = "lblRank4";
-            this.lblRank4.Size = new System.Drawing.Size(35, 37);
-            this.lblRank4.TabIndex = 7;
-            this.lblRank4.Text = "4";
-            // 
-            // lblRank5
-            // 
-            this.lblRank5.AutoSize = true;
-            this.lblRank5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank5.Location = new System.Drawing.Point(349, 488);
-            this.lblRank5.Name = "lblRank5";
-            this.lblRank5.Size = new System.Drawing.Size(35, 37);
-            this.lblRank5.TabIndex = 8;
-            this.lblRank5.Text = "5";
-            // 
-            // lblRank6
-            // 
-            this.lblRank6.AutoSize = true;
-            this.lblRank6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank6.Location = new System.Drawing.Point(349, 558);
-            this.lblRank6.Name = "lblRank6";
-            this.lblRank6.Size = new System.Drawing.Size(35, 37);
-            this.lblRank6.TabIndex = 9;
-            this.lblRank6.Text = "6";
-            // 
-            // lblRank7
-            // 
-            this.lblRank7.AutoSize = true;
-            this.lblRank7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank7.Location = new System.Drawing.Point(349, 628);
-            this.lblRank7.Name = "lblRank7";
-            this.lblRank7.Size = new System.Drawing.Size(35, 37);
-            this.lblRank7.TabIndex = 10;
-            this.lblRank7.Text = "7";
-            // 
-            // lblRank8
-            // 
-            this.lblRank8.AutoSize = true;
-            this.lblRank8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank8.Location = new System.Drawing.Point(349, 698);
-            this.lblRank8.Name = "lblRank8";
-            this.lblRank8.Size = new System.Drawing.Size(35, 37);
-            this.lblRank8.TabIndex = 11;
-            this.lblRank8.Text = "8";
-            // 
-            // lblRank9
-            // 
-            this.lblRank9.AutoSize = true;
-            this.lblRank9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank9.Location = new System.Drawing.Point(349, 768);
-            this.lblRank9.Name = "lblRank9";
-            this.lblRank9.Size = new System.Drawing.Size(35, 37);
-            this.lblRank9.TabIndex = 12;
-            this.lblRank9.Text = "9";
-            // 
-            // lblRank10
-            // 
-            this.lblRank10.AutoSize = true;
-            this.lblRank10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank10.Location = new System.Drawing.Point(349, 838);
-            this.lblRank10.Name = "lblRank10";
-            this.lblRank10.Size = new System.Drawing.Size(51, 37);
-            this.lblRank10.TabIndex = 13;
-            this.lblRank10.Text = "10";
-            // 
-            // lblScore1
-            // 
-            this.lblScore1.AutoSize = true;
-            this.lblScore1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore1.Location = new System.Drawing.Point(687, 208);
-            this.lblScore1.Name = "lblScore1";
-            this.lblScore1.Size = new System.Drawing.Size(101, 31);
-            this.lblScore1.TabIndex = 14;
-            this.lblScore1.Text = "label13";
-            // 
-            // lblScore2
-            // 
-            this.lblScore2.AutoSize = true;
-            this.lblScore2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore2.Location = new System.Drawing.Point(687, 281);
-            this.lblScore2.Name = "lblScore2";
-            this.lblScore2.Size = new System.Drawing.Size(101, 31);
-            this.lblScore2.TabIndex = 15;
-            this.lblScore2.Text = "label14";
-            // 
-            // lblScore3
-            // 
-            this.lblScore3.AutoSize = true;
-            this.lblScore3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore3.Location = new System.Drawing.Point(687, 348);
-            this.lblScore3.Name = "lblScore3";
-            this.lblScore3.Size = new System.Drawing.Size(101, 31);
-            this.lblScore3.TabIndex = 16;
-            this.lblScore3.Text = "label15";
-            // 
-            // lblScore4
-            // 
-            this.lblScore4.AutoSize = true;
-            this.lblScore4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore4.Location = new System.Drawing.Point(687, 418);
-            this.lblScore4.Name = "lblScore4";
-            this.lblScore4.Size = new System.Drawing.Size(101, 31);
-            this.lblScore4.TabIndex = 17;
-            this.lblScore4.Text = "label16";
-            // 
-            // lblScore5
-            // 
-            this.lblScore5.AutoSize = true;
-            this.lblScore5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore5.Location = new System.Drawing.Point(687, 488);
-            this.lblScore5.Name = "lblScore5";
-            this.lblScore5.Size = new System.Drawing.Size(101, 31);
-            this.lblScore5.TabIndex = 18;
-            this.lblScore5.Text = "label17";
-            // 
-            // lblScore6
-            // 
-            this.lblScore6.AutoSize = true;
-            this.lblScore6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore6.Location = new System.Drawing.Point(687, 558);
-            this.lblScore6.Name = "lblScore6";
-            this.lblScore6.Size = new System.Drawing.Size(101, 31);
-            this.lblScore6.TabIndex = 19;
-            this.lblScore6.Text = "label18";
-            // 
-            // lblScore7
-            // 
-            this.lblScore7.AutoSize = true;
-            this.lblScore7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore7.Location = new System.Drawing.Point(689, 628);
-            this.lblScore7.Name = "lblScore7";
-            this.lblScore7.Size = new System.Drawing.Size(101, 31);
-            this.lblScore7.TabIndex = 20;
-            this.lblScore7.Text = "label19";
-            // 
-            // lblScore8
-            // 
-            this.lblScore8.AutoSize = true;
-            this.lblScore8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore8.Location = new System.Drawing.Point(687, 698);
-            this.lblScore8.Name = "lblScore8";
-            this.lblScore8.Size = new System.Drawing.Size(101, 31);
-            this.lblScore8.TabIndex = 21;
-            this.lblScore8.Text = "label20";
-            // 
-            // lblScore9
-            // 
-            this.lblScore9.AutoSize = true;
-            this.lblScore9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore9.Location = new System.Drawing.Point(687, 768);
-            this.lblScore9.Name = "lblScore9";
-            this.lblScore9.Size = new System.Drawing.Size(101, 31);
-            this.lblScore9.TabIndex = 22;
-            this.lblScore9.Text = "label21";
-            // 
-            // lblScore10
-            // 
-            this.lblScore10.AutoSize = true;
-            this.lblScore10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore10.Location = new System.Drawing.Point(687, 838);
-            this.lblScore10.Name = "lblScore10";
-            this.lblScore10.Size = new System.Drawing.Size(101, 31);
-            this.lblScore10.TabIndex = 23;
-            this.lblScore10.Text = "label22";
+            this.btnHighScoreToMainMenu.Location = new System.Drawing.Point(58, 824);
+            this.btnHighScoreToMainMenu.Name = "btnHighScoreToMainMenu";
+            this.btnHighScoreToMainMenu.Size = new System.Drawing.Size(165, 90);
+            this.btnHighScoreToMainMenu.TabIndex = 34;
+            this.btnHighScoreToMainMenu.Text = "Back";
+            this.btnHighScoreToMainMenu.UseVisualStyleBackColor = true;
+            this.btnHighScoreToMainMenu.Click += new System.EventHandler(this.btnHighScoreToMainMenu_Click);
             // 
             // lblPlayerName10
             // 
@@ -1075,15 +900,311 @@
             this.lblPlayerName1.TabIndex = 24;
             this.lblPlayerName1.Text = "label32";
             // 
-            // btnHighScoreToMainMenu
+            // lblScore10
             // 
-            this.btnHighScoreToMainMenu.Location = new System.Drawing.Point(58, 824);
-            this.btnHighScoreToMainMenu.Name = "btnHighScoreToMainMenu";
-            this.btnHighScoreToMainMenu.Size = new System.Drawing.Size(165, 90);
-            this.btnHighScoreToMainMenu.TabIndex = 34;
-            this.btnHighScoreToMainMenu.Text = "Back";
-            this.btnHighScoreToMainMenu.UseVisualStyleBackColor = true;
-            this.btnHighScoreToMainMenu.Click += new System.EventHandler(this.btnHighScoreToMainMenu_Click);
+            this.lblScore10.AutoSize = true;
+            this.lblScore10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore10.Location = new System.Drawing.Point(687, 838);
+            this.lblScore10.Name = "lblScore10";
+            this.lblScore10.Size = new System.Drawing.Size(101, 31);
+            this.lblScore10.TabIndex = 23;
+            this.lblScore10.Text = "label22";
+            // 
+            // lblScore9
+            // 
+            this.lblScore9.AutoSize = true;
+            this.lblScore9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore9.Location = new System.Drawing.Point(687, 768);
+            this.lblScore9.Name = "lblScore9";
+            this.lblScore9.Size = new System.Drawing.Size(101, 31);
+            this.lblScore9.TabIndex = 22;
+            this.lblScore9.Text = "label21";
+            // 
+            // lblScore8
+            // 
+            this.lblScore8.AutoSize = true;
+            this.lblScore8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore8.Location = new System.Drawing.Point(687, 698);
+            this.lblScore8.Name = "lblScore8";
+            this.lblScore8.Size = new System.Drawing.Size(101, 31);
+            this.lblScore8.TabIndex = 21;
+            this.lblScore8.Text = "label20";
+            // 
+            // lblScore7
+            // 
+            this.lblScore7.AutoSize = true;
+            this.lblScore7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore7.Location = new System.Drawing.Point(689, 628);
+            this.lblScore7.Name = "lblScore7";
+            this.lblScore7.Size = new System.Drawing.Size(101, 31);
+            this.lblScore7.TabIndex = 20;
+            this.lblScore7.Text = "label19";
+            // 
+            // lblScore6
+            // 
+            this.lblScore6.AutoSize = true;
+            this.lblScore6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore6.Location = new System.Drawing.Point(687, 558);
+            this.lblScore6.Name = "lblScore6";
+            this.lblScore6.Size = new System.Drawing.Size(101, 31);
+            this.lblScore6.TabIndex = 19;
+            this.lblScore6.Text = "label18";
+            // 
+            // lblScore5
+            // 
+            this.lblScore5.AutoSize = true;
+            this.lblScore5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore5.Location = new System.Drawing.Point(687, 488);
+            this.lblScore5.Name = "lblScore5";
+            this.lblScore5.Size = new System.Drawing.Size(101, 31);
+            this.lblScore5.TabIndex = 18;
+            this.lblScore5.Text = "label17";
+            // 
+            // lblScore4
+            // 
+            this.lblScore4.AutoSize = true;
+            this.lblScore4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore4.Location = new System.Drawing.Point(687, 418);
+            this.lblScore4.Name = "lblScore4";
+            this.lblScore4.Size = new System.Drawing.Size(101, 31);
+            this.lblScore4.TabIndex = 17;
+            this.lblScore4.Text = "label16";
+            // 
+            // lblScore3
+            // 
+            this.lblScore3.AutoSize = true;
+            this.lblScore3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore3.Location = new System.Drawing.Point(687, 348);
+            this.lblScore3.Name = "lblScore3";
+            this.lblScore3.Size = new System.Drawing.Size(101, 31);
+            this.lblScore3.TabIndex = 16;
+            this.lblScore3.Text = "label15";
+            // 
+            // lblScore2
+            // 
+            this.lblScore2.AutoSize = true;
+            this.lblScore2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore2.Location = new System.Drawing.Point(687, 281);
+            this.lblScore2.Name = "lblScore2";
+            this.lblScore2.Size = new System.Drawing.Size(101, 31);
+            this.lblScore2.TabIndex = 15;
+            this.lblScore2.Text = "label14";
+            // 
+            // lblScore1
+            // 
+            this.lblScore1.AutoSize = true;
+            this.lblScore1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore1.Location = new System.Drawing.Point(687, 208);
+            this.lblScore1.Name = "lblScore1";
+            this.lblScore1.Size = new System.Drawing.Size(101, 31);
+            this.lblScore1.TabIndex = 14;
+            this.lblScore1.Text = "label13";
+            // 
+            // lblRank10
+            // 
+            this.lblRank10.AutoSize = true;
+            this.lblRank10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank10.Location = new System.Drawing.Point(349, 838);
+            this.lblRank10.Name = "lblRank10";
+            this.lblRank10.Size = new System.Drawing.Size(51, 37);
+            this.lblRank10.TabIndex = 13;
+            this.lblRank10.Text = "10";
+            // 
+            // lblRank9
+            // 
+            this.lblRank9.AutoSize = true;
+            this.lblRank9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank9.Location = new System.Drawing.Point(349, 768);
+            this.lblRank9.Name = "lblRank9";
+            this.lblRank9.Size = new System.Drawing.Size(35, 37);
+            this.lblRank9.TabIndex = 12;
+            this.lblRank9.Text = "9";
+            // 
+            // lblRank8
+            // 
+            this.lblRank8.AutoSize = true;
+            this.lblRank8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank8.Location = new System.Drawing.Point(349, 698);
+            this.lblRank8.Name = "lblRank8";
+            this.lblRank8.Size = new System.Drawing.Size(35, 37);
+            this.lblRank8.TabIndex = 11;
+            this.lblRank8.Text = "8";
+            // 
+            // lblRank7
+            // 
+            this.lblRank7.AutoSize = true;
+            this.lblRank7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank7.Location = new System.Drawing.Point(349, 628);
+            this.lblRank7.Name = "lblRank7";
+            this.lblRank7.Size = new System.Drawing.Size(35, 37);
+            this.lblRank7.TabIndex = 10;
+            this.lblRank7.Text = "7";
+            // 
+            // lblRank6
+            // 
+            this.lblRank6.AutoSize = true;
+            this.lblRank6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank6.Location = new System.Drawing.Point(349, 558);
+            this.lblRank6.Name = "lblRank6";
+            this.lblRank6.Size = new System.Drawing.Size(35, 37);
+            this.lblRank6.TabIndex = 9;
+            this.lblRank6.Text = "6";
+            // 
+            // lblRank5
+            // 
+            this.lblRank5.AutoSize = true;
+            this.lblRank5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank5.Location = new System.Drawing.Point(349, 488);
+            this.lblRank5.Name = "lblRank5";
+            this.lblRank5.Size = new System.Drawing.Size(35, 37);
+            this.lblRank5.TabIndex = 8;
+            this.lblRank5.Text = "5";
+            // 
+            // lblRank4
+            // 
+            this.lblRank4.AutoSize = true;
+            this.lblRank4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank4.Location = new System.Drawing.Point(349, 418);
+            this.lblRank4.Name = "lblRank4";
+            this.lblRank4.Size = new System.Drawing.Size(35, 37);
+            this.lblRank4.TabIndex = 7;
+            this.lblRank4.Text = "4";
+            // 
+            // lblRank3
+            // 
+            this.lblRank3.AutoSize = true;
+            this.lblRank3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank3.Location = new System.Drawing.Point(349, 348);
+            this.lblRank3.Name = "lblRank3";
+            this.lblRank3.Size = new System.Drawing.Size(35, 37);
+            this.lblRank3.TabIndex = 6;
+            this.lblRank3.Text = "3";
+            // 
+            // lblRank2
+            // 
+            this.lblRank2.AutoSize = true;
+            this.lblRank2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank2.Location = new System.Drawing.Point(349, 278);
+            this.lblRank2.Name = "lblRank2";
+            this.lblRank2.Size = new System.Drawing.Size(35, 37);
+            this.lblRank2.TabIndex = 5;
+            this.lblRank2.Text = "2";
+            // 
+            // pnTrivia
+            // 
+            this.pnTrivia.BackgroundImage = global::WumpusTest.Properties.Resources.CaveBackground;
+            this.pnTrivia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnTrivia.Controls.Add(this.btnAnswer4);
+            this.pnTrivia.Controls.Add(this.btnAnswer3);
+            this.pnTrivia.Controls.Add(this.btnAnswer2);
+            this.pnTrivia.Controls.Add(this.btnAnswer1);
+            this.pnTrivia.Controls.Add(this.tbQuestion);
+            this.pnTrivia.Location = new System.Drawing.Point(0, 0);
+            this.pnTrivia.Name = "pnTrivia";
+            this.pnTrivia.Size = new System.Drawing.Size(1464, 797);
+            this.pnTrivia.TabIndex = 27;
+            // 
+            // btnAnswer4
+            // 
+            this.btnAnswer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswer4.Location = new System.Drawing.Point(857, 550);
+            this.btnAnswer4.Name = "btnAnswer4";
+            this.btnAnswer4.Size = new System.Drawing.Size(443, 201);
+            this.btnAnswer4.TabIndex = 4;
+            this.btnAnswer4.UseVisualStyleBackColor = true;
+            this.btnAnswer4.Click += new System.EventHandler(this.btnAnswer4_Click);
+            // 
+            // btnAnswer3
+            // 
+            this.btnAnswer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswer3.Location = new System.Drawing.Point(857, 320);
+            this.btnAnswer3.Name = "btnAnswer3";
+            this.btnAnswer3.Size = new System.Drawing.Size(443, 201);
+            this.btnAnswer3.TabIndex = 3;
+            this.btnAnswer3.UseVisualStyleBackColor = true;
+            this.btnAnswer3.Click += new System.EventHandler(this.btnAnswer3_Click);
+            // 
+            // btnAnswer2
+            // 
+            this.btnAnswer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswer2.Location = new System.Drawing.Point(156, 550);
+            this.btnAnswer2.Name = "btnAnswer2";
+            this.btnAnswer2.Size = new System.Drawing.Size(443, 201);
+            this.btnAnswer2.TabIndex = 2;
+            this.btnAnswer2.UseVisualStyleBackColor = true;
+            this.btnAnswer2.Click += new System.EventHandler(this.btnAnswer2_Click);
+            // 
+            // btnAnswer1
+            // 
+            this.btnAnswer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswer1.Location = new System.Drawing.Point(156, 318);
+            this.btnAnswer1.Name = "btnAnswer1";
+            this.btnAnswer1.Size = new System.Drawing.Size(443, 201);
+            this.btnAnswer1.TabIndex = 1;
+            this.btnAnswer1.UseVisualStyleBackColor = true;
+            this.btnAnswer1.Click += new System.EventHandler(this.btnAnswer1_Click);
+            // 
+            // tbQuestion
+            // 
+            this.tbQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbQuestion.Location = new System.Drawing.Point(354, 38);
+            this.tbQuestion.Multiline = true;
+            this.tbQuestion.Name = "tbQuestion";
+            this.tbQuestion.Size = new System.Drawing.Size(736, 240);
+            this.tbQuestion.TabIndex = 0;
+            // 
+            // pnEndScreen
+            // 
+            this.pnEndScreen.BackgroundImage = global::WumpusTest.Properties.Resources.CaveBackground;
+            this.pnEndScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnEndScreen.Controls.Add(this.btnEndScreenToMainMenu);
+            this.pnEndScreen.Controls.Add(this.lblNumFinalScore);
+            this.pnEndScreen.Controls.Add(this.lblFinalScore);
+            this.pnEndScreen.Controls.Add(this.lblResult);
+            this.pnEndScreen.Location = new System.Drawing.Point(0, 0);
+            this.pnEndScreen.Name = "pnEndScreen";
+            this.pnEndScreen.Size = new System.Drawing.Size(1466, 946);
+            this.pnEndScreen.TabIndex = 5;
+            // 
+            // btnEndScreenToMainMenu
+            // 
+            this.btnEndScreenToMainMenu.Location = new System.Drawing.Point(574, 639);
+            this.btnEndScreenToMainMenu.Name = "btnEndScreenToMainMenu";
+            this.btnEndScreenToMainMenu.Size = new System.Drawing.Size(288, 120);
+            this.btnEndScreenToMainMenu.TabIndex = 3;
+            this.btnEndScreenToMainMenu.Text = "Main Menu";
+            this.btnEndScreenToMainMenu.UseVisualStyleBackColor = true;
+            this.btnEndScreenToMainMenu.Click += new System.EventHandler(this.btnEndScreenToMainMenu_Click);
+            // 
+            // lblNumFinalScore
+            // 
+            this.lblNumFinalScore.AutoSize = true;
+            this.lblNumFinalScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumFinalScore.Location = new System.Drawing.Point(747, 454);
+            this.lblNumFinalScore.Name = "lblNumFinalScore";
+            this.lblNumFinalScore.Size = new System.Drawing.Size(128, 67);
+            this.lblNumFinalScore.TabIndex = 2;
+            this.lblNumFinalScore.Text = "120";
+            // 
+            // lblFinalScore
+            // 
+            this.lblFinalScore.AutoSize = true;
+            this.lblFinalScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFinalScore.Location = new System.Drawing.Point(562, 454);
+            this.lblFinalScore.Name = "lblFinalScore";
+            this.lblFinalScore.Size = new System.Drawing.Size(200, 67);
+            this.lblFinalScore.TabIndex = 1;
+            this.lblFinalScore.Text = "Score:";
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(226, 138);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(1026, 217);
+            this.lblResult.TabIndex = 0;
+            this.lblResult.Text = "YOU DIED";
             // 
             // GUI
             // 
@@ -1091,12 +1212,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1462, 946);
-            this.Controls.Add(this.pnInstructions);
-            this.Controls.Add(this.pnGame);
             this.Controls.Add(this.pnStatusBar);
+            this.Controls.Add(this.pnGame);
+            this.Controls.Add(this.pnMainMenu);
+            this.Controls.Add(this.pnInstructions);
+            this.Controls.Add(this.pnEndScreen);
+            this.Controls.Add(this.pnTrivia);
             this.Controls.Add(this.pnNameInput);
             this.Controls.Add(this.pnHighScores);
-            this.Controls.Add(this.pnMainMenu);
             this.Name = "GUI";
             this.pnMainMenu.ResumeLayout(false);
             this.pnMainMenu.PerformLayout();
@@ -1121,6 +1244,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbNorth)).EndInit();
             this.pnHighScores.ResumeLayout(false);
             this.pnHighScores.PerformLayout();
+            this.pnTrivia.ResumeLayout(false);
+            this.pnTrivia.PerformLayout();
+            this.pnEndScreen.ResumeLayout(false);
+            this.pnEndScreen.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1131,7 +1258,6 @@
         private System.Windows.Forms.Label lbWumpus;
         private System.Windows.Forms.Label lbThe;
         private System.Windows.Forms.Label lbHunt;
-        private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Button btnInstructions;
         private System.Windows.Forms.Button btnHighScores;
         private System.Windows.Forms.Button btnStart;
@@ -1214,6 +1340,17 @@
         private System.Windows.Forms.Label lblRank;
         private System.Windows.Forms.Label lblHighScore;
         private System.Windows.Forms.Button btnHighScoreToMainMenu;
+        private System.Windows.Forms.Panel pnTrivia;
+        private System.Windows.Forms.Button btnAnswer4;
+        private System.Windows.Forms.Button btnAnswer3;
+        private System.Windows.Forms.Button btnAnswer2;
+        private System.Windows.Forms.Button btnAnswer1;
+        private System.Windows.Forms.TextBox tbQuestion;
+        private System.Windows.Forms.Panel pnEndScreen;
+        private System.Windows.Forms.Button btnEndScreenToMainMenu;
+        private System.Windows.Forms.Label lblNumFinalScore;
+        private System.Windows.Forms.Label lblFinalScore;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 

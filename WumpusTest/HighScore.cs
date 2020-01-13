@@ -1,4 +1,4 @@
-
+﻿
 
 using System;
 using System.Collections;
@@ -17,20 +17,19 @@ namespace WumpusTest
         private int[] scores = new int[10];
         private String[] scoresAsString = new String[10];
         private List<string> scoresAsArrayList = new List<string>();
-        private string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\HighScores.txt"; 
+        private string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\HighScores.txt";
 
-        // constructor loads in scores from a file
-        public HighScore() 
+
+        public HighScore()
         {
             scoresAsString = File.ReadAllLines(filePath);
             scoresAsArrayList.AddRange(scoresAsString); 
         }
-        // precondition: Scores have been initialized and name is a valid string and newScore is a valid int
-        // postcondition:A score is added to the field scoresAsArrayList
+
         public void addScore(String name, int newScore)
         {
             if (checkForHighScore(newScore))
-            { // if list is full remove lowst number
+            {
                 if (scoresAsArrayList.Count() >= 10)
                 {
                     scoresAsArrayList.RemoveAt(0);
@@ -51,7 +50,7 @@ namespace WumpusTest
                 writeToFile();
             }
         }
-        // checks if the new score is withing the top 10 scores
+
         private Boolean checkForHighScore(int newScore)
         {
             if (!isListFull())
@@ -67,7 +66,7 @@ namespace WumpusTest
                 return false;
             }
         }
-        // checks if highscore has too many values
+
         private Boolean isListFull()
         {
             if (scores.Length >= 10)
@@ -76,38 +75,40 @@ namespace WumpusTest
             }
             return false;
         }
-        // method to update the highscore file
+
         private void writeToFile()
         {
             File.WriteAllLines(filePath, scoresAsArrayList);
         }
-        // passes just the names of high scorers
+
         public string[] getNames()
         {
-            string[] arrayScores = scoresAsArrayList.ToArray();
             string[] splitString;
             string[] names = setStartingState();
-            for (int i = 0; i < arrayScores.Length; i++)
+            int nameIndex = 0;
+            for (int i = scoresAsArrayList.Count - 1; i >= 0; i--)
             {
-                splitString = arrayScores[i].Split(null);
-                names[i] = splitString[0];
+                splitString = scoresAsArrayList.ElementAt(i).Split(' ');
+                names[nameIndex++] = splitString[0];
             }
             return names;
         }
-        // passes the scores as a string array        
+
+        
         public string[] getScores()
         {
             string[] splitString;
             string[] scores = setStartingState();
-            for (int i = 0; i < scoresAsArrayList.Count; i++)
+            int scoreIndex = 0;
+            for (int i = scoresAsArrayList.Count - 1; i >= 0; i--)
             {
                 splitString = scoresAsArrayList.ElementAt(i).Split(' ');
-                scores[i] = splitString[1];
+                scores[scoreIndex++] = splitString[1];
             }
             return scores;
         }
         
-        // propagates the string array with null values
+
         private string[] setStartingState()
         {
             string[] arr = new string[10];
@@ -121,4 +122,3 @@ namespace WumpusTest
     }
 
 }
-
